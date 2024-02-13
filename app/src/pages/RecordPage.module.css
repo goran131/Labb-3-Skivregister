@@ -1,0 +1,62 @@
+.left {
+    float: left;
+    width: 300px;
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.leftNoTracks {
+    float: left;
+    width: 340px;
+}
+
+.right {
+    margin-top: -30px;
+    float: left;
+    margin-left: 40px;
+}
+
+.imageBox {
+    max-width: 300px;
+    padding: 0px;
+    display: inline-block;
+}
+
+.imageBox p {
+    max-width: 400px;
+    padding: 0 10px 15px;
+    margin: 10px 0;
+    text-align: left;
+    display: flex;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.bigImage {
+    width: 100%;
+}
+
+.imagePopup .closePopup {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 4px 8px 8px;
+    line-height: 20px;
+    right: -14px;
+    top: -14px;
+    font-size: 26px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+}
+
+@media screen and (max-width: 760px) {
+    .right {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}

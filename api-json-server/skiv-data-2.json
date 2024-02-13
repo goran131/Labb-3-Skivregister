@@ -1,0 +1,598 @@
+{
+    "hardrock": [
+        {
+            "id": 0,
+            "name": "AC/DC",
+            "description": "Australienskt hårdrockband med rötterna från Skottland",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "AC/DC",
+                    "title": "Let there be rock",
+                    "medium": "CD",
+                    "year": "1977",
+                    "description": "AC/DC:s fjärde studioalbum. Bon scott på sång.",
+                    "coverImage": "/images/AC-DC - Let there be rock.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 1,
+                    "artist": "AC/DC",
+                    "title": "If you want blood you've got it",
+                    "medium": "LP",
+                    "year": "1978",
+                    "description": "AC/DC:s första livealbum. Det enda live albumet med Bon scott på sång.",
+                    "coverImage": "/images/AC-DC - If you want blood youve got it.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 2,
+                    "artist": "AC/DC",
+                    "title": "If you want blood you've got it",
+                    "medium": "CD",
+                    "year": "1978",
+                    "description": "AC/DC:s första livealbum. Bon scott på sång ",
+                    "coverImage": "/images/AC-DC - If you want blood youve got it.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 3,
+                    "artist": "AC/DC",
+                    "title": "Highway to hell",
+                    "medium": "CD",
+                    "year": "1979",
+                    "description": "AC/DC:s sjätte studioalbum. Det sista albumet med Bon scott på sång ",
+                    "coverImage": "/images/AC-DC - Highway to hell.jpg",
+                    "tracks": [
+                        {
+                            "id": 0,
+                            "name": "Highway to hell"
+                        },
+                        {
+                            "id": 1,
+                            "name": "Girls got rhythm"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Walk all over you"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Touch too much"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Beating around the bush"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Shot down in flames"
+                        },
+                        {
+                            "id": 6,
+                            "name": "Get it hot"
+                        },
+                        {
+                            "id": 7,
+                            "name": "If you want blood you've got it"
+                        },
+                        {
+                            "id": 8,
+                            "name": "Love hungry man"
+                        },
+                        {
+                            "id": 9,
+                            "name": "Night prowler"
+                        }
+                    ]
+                },
+                {
+                    "id": 4,
+                    "artist": "AC/DC",
+                    "title": "Back in black",
+                    "medium": "CD",
+                    "year": "1980",
+                    "description": "AC/DC:s sjunde studioalbum. Det första albumet med Brian Johnson på sång ",
+                    "coverImage": "/images/AC-DC - Back in black.jpg",
+                    "tracks": [
+                        {
+                            "id": 0,
+                            "name": "Hells bells"
+                        },
+                        {
+                            "id": 1,
+                            "name": "Shoot to thrill"
+                        },
+                        {
+                            "id": 2,
+                            "name": "What do you do for money honey"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Given the dog a bone"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Let me put my love into you"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Back in black"
+                        },
+                        {
+                            "id": 6,
+                            "name": "You shook me all night long"
+                        },
+                        {
+                            "id": 7,
+                            "name": "Have a drink on me"
+                        },
+                        {
+                            "id": 8,
+                            "name": "Shake a leg"
+                        },
+                        {
+                            "id": 9,
+                            "name": "Rock and roll ain't noise pollution"
+                        }
+                    ]
+                },
+                {
+                    "id": 5,
+                    "artist": "AC/DC",
+                    "title": "For those about to rock We salute you",
+                    "medium": "LP",
+                    "year": "1981",
+                    "description": "AC/DC:s åttonde studioalbum. Det andra albumet med Brian Johnson på sång.",
+                    "coverImage": "/images/AC-DC - For those about to rock.jpg",
+                    "tracks": [
+                        {
+                            "id": 0,
+                            "name": "For those about to rock (We salute you)"
+                        },
+                        {
+                            "id": 1,
+                            "name": "Put the finger on you"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Lets get it up"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Inject the venom"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Snowballed"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Evil walks"
+                        },
+                        {
+                            "id": 6,
+                            "name": "C.O.D."
+                        },
+                        {
+                            "id": 7,
+                            "name": "Breaking the rules"
+                        },
+                        {
+                            "id": 8,
+                            "name": "Night of the long knifes"
+                        },
+                        {
+                            "id": 9,
+                            "name": "Spellbpound"
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "artist": "AC/DC",
+                    "title": "For those about to rock We salute you",
+                    "medium": "CD",
+                    "year": "1981",
+                    "description": "AC/DC:s åttonde studioalbum. Det andra albumet med Brian Johnson på sång.",
+                    "coverImage": "/images/AC-DC - For those about to rock.jpg",
+                    "tracks": [
+                        {
+                            "id": 0,
+                            "name": "For those about to rock (We salute you)"
+                        },
+                        {
+                            "id": 1,
+                            "name": "Put the finger on you"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Lets get it up"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Inject the venom"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Snowballed"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Evil walks"
+                        },
+                        {
+                            "id": 6,
+                            "name": "C.O.D."
+                        },
+                        {
+                            "id": 7,
+                            "name": "Breaking the rules"
+                        },
+                        {
+                            "id": 8,
+                            "name": "Night of the long knifes"
+                        },
+                        {
+                            "id": 9,
+                            "name": "Spellbpound"
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "artist": "AC/DC",
+                    "title": "Flick of the switch",
+                    "medium": "LP",
+                    "year": "1983",
+                    "description": "AC/DC:s nionde studioalbum. Brian Johnson på sång.",
+                    "coverImage": "/images/AC-DC - Flick of the switch.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 8,
+                    "artist": "AC/DC",
+                    "title": "The razors edge",
+                    "medium": "CD",
+                    "year": "1990",
+                    "description": "AC/DC:s tolfte studioalbum. Brian Johnson på sång. Thunderstruck är med på denna skivan",
+                    "coverImage": "/images/AC-DC - The razors edge.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 9,
+                    "artist": "AC/DC",
+                    "title": "Stiff upper lip",
+                    "medium": "CD",
+                    "year": "2000",
+                    "description": "AC/DC:s fjortonde studioalbum. Brian Johnson på sång. ",
+                    "coverImage": "/images/AC-DC - Stiff upper lip.jpg",
+                    "tracks": []
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Deep Purple",
+            "description": "Engelskt hårdrockband somm bildades 1968. Mest kända medlemmar är Ian Gillan - sång, Ritchie Blackmore - gitarr, Jon Lord - keyboards, Roger Glover - bas och Ian Paice - trummor. Andra namnkunniga personer som varit med i Deep Purple är David Coverdale - sång, Glenn Hughes - bas, Steve Morse - gitarr och Don Airey - keyboards. Alla utom Jon Lord lever fortfarande.",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Deep Purple",
+                    "title": "In rock",
+                    "medium": "LP",
+                    "year": "1970",
+                    "description": "In rock är Deep Purple fjärde studioalbum och det första med Ian Gillan på sång",
+                    "coverImage": "/images/Deep Purple - In rock.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 1,
+                    "artist": "Deep Purple",
+                    "title": "In live concert at the Royal Albert Hall",
+                    "medium": "LP",
+                    "year": "1970",
+                    "description": "Live inpelning tillsammans med Royal Philharmonic Orchestra.",
+                    "coverImage": "/images/Deep Purple -In live concert at the Royal Albert Hall.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 2,
+                    "artist": "Deep Purple",
+                    "title": "Machine head",
+                    "medium": "LP",
+                    "year": "1972",
+                    "description": "Smoke on the water och Highway star är med på denna skivan. Ian Gillan på sång.",
+                    "coverImage": "/images/Deep Purple - Machine head.jpg",
+                    "tracks": []
+                },
+
+                {
+                    "id": 3,
+                    "artist": "Deep Purple",
+                    "title": "Burn",
+                    "medium": "LP",
+                    "year": "1974",
+                    "description": "Första studioalbumet med David Coverdale på sång.",
+                    "coverImage": "/images/Deep Purple - Burn.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 4,
+                    "artist": "Deep Purple",
+                    "title": "Stormbringer",
+                    "medium": "CD",
+                    "year": "1974",
+                    "description": "Andra studioalbumet med David Coverdale på sång.",
+                    "coverImage": "/images/Deep Purple - Stormbringer.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 5,
+                    "artist": "Deep Purple",
+                    "title": "Made in Europe",
+                    "medium": "CD",
+                    "year": "1976",
+                    "description": "Live album inpspelat i Europa. David Coverdale på sång.",
+                    "coverImage": "/images/Deep Purple - Made in Europe.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 6,
+                    "artist": "Deep Purple",
+                    "title": "The best of",
+                    "medium": "CD",
+                    "year": "1987",
+                    "description": "Samlingsalbum.",
+                    "coverImage": "/images/Deep Purple - The best of.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 7,
+                    "artist": "Deep Purple",
+                    "title": "Nobody's perfect",
+                    "medium": "CD",
+                    "year": "1988",
+                    "description": "Dubbelt live album med Ian Gillan på sång.",
+                    "coverImage": "/images/Deep Purple - Nobodys perfect.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 8,
+                    "artist": "Deep Purple",
+                    "title": "The battle rages on",
+                    "medium": "CD",
+                    "year": "1993",
+                    "description": "Studioalbum med Ian Gillan på sång. Sista skivan med Ritchie Blackmore på gitarr",
+                    "coverImage": "/images/Deep Purple - The battle rages on.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 9,
+                    "artist": "Deep Purple",
+                    "title": "Rock giants",
+                    "medium": "CD",
+                    "year": "1993",
+                    "description": "Samlingsalbum.",
+                    "coverImage": "/images/Deep Purple - Rock giants",
+                    "tracks": []
+                },
+                {
+                    "id": 10,
+                    "artist": "Deep Purple",
+                    "title": "Purpendicular",
+                    "medium": "CD",
+                    "year": "1996",
+                    "description": "Studioalbum med Ian Gillan på sång. Första skivan med Steve Morse på gitarr",
+                    "coverImage": "/images/Deep Purple - Purpendicular.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 11,
+                    "artist": "Deep Purple",
+                    "title": "Abandon",
+                    "medium": "CD",
+                    "year": "1998",
+                    "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
+                    "coverImage": "/images/Deep Purple - Abandon.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 12,
+                    "artist": "Deep Purple",
+                    "title": "Bananas",
+                    "medium": "CD",
+                    "year": "2003",
+                    "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
+                    "coverImage": "/images/Deep Purple - Bananas.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 13,
+                    "artist": "Deep Purple",
+                    "title": "Infinite",
+                    "medium": "CD",
+                    "year": "2017",
+                    "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
+                    "coverImage": "/images/Deep Purple - Infinite.jpg",
+                    "tracks": []
+                }
+            ]
+        }
+    ],
+    "dansband": [
+        {
+            "id": 0,
+            "name": "Sven Ingvars",
+            "description": "Svenskt dansband",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Sven ingvars",
+                    "title": "25 av Sven Ingvars bästa",
+                    "medium": "CD",
+                    "year": "1988",
+                    "description": "",
+                    "coverImage": "/images/Sven Ingvars - 25 av Sven Ingvars bästa.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 1,
+                    "artist": "Sven ingvars",
+                    "title": "På begäran",
+                    "medium": "CD",
+                    "year": "1990",
+                    "description": "Nyinspelade versioner av deras gamla hits",
+                    "coverImage": "/images/Sven Ingvars - På begäran.jpg",
+                    "tracks": []
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Wizex",
+            "description": "Skånskt dansband",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Wizex",
+                    "title": "Varma vindar",
+                    "medium": "CD",
+                    "year": "1995",
+                    "description": "",
+                    "coverImage": "/images/Wizex - Varma vindar.jpg",
+                    "tracks": []
+                }
+            ]
+        }
+    ],
+    "svensk-pop-rock": [
+        {
+            "id": 0,
+            "name": "Stefan Andersson",
+            "description": "",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Stefan Andersson",
+                    "title": "Emperors day",
+                    "medium": "CD",
+                    "year": "1992",
+                    "description": "",
+                    "coverImage": "/Stefan Andersson - Emperors day.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 1,
+                    "artist": "Stefan Andersson",
+                    "title": "Walk right on",
+                    "medium": "CD",
+                    "year": "1993",
+                    "description": "",
+                    "coverImage": "/Stefan Andersson - Walk right on.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 2,
+                    "artist": "Stefan Andersson",
+                    "title": "Under a low-ceilinged sky",
+                    "medium": "CD",
+                    "year": "1996",
+                    "description": "",
+                    "coverImage": "/Stefan Andersson - Under a low-ceilinged sky.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 3,
+                    "artist": "Stefan Andersson",
+                    "title": "På svenska",
+                    "medium": "CD",
+                    "year": "1997",
+                    "description": "",
+                    "coverImage": "/images/Stefan Andersson - På svenska.jpg",
+                    "tracks": []
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Gyllene Tider",
+            "description": "",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Gyllene Tider",
+                    "title": "Dags att tänka på refrängen",
+                    "medium": "CD",
+                    "year": "2013",
+                    "description": "",
+                    "coverImage": "/images/Gyllene Tider - Dags att tänka på refrängen.jpg",
+                    "tracks": []
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Wilmer X",
+            "description": "",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Wilmer X",
+                    "title": "Mambo feber",
+                    "medium": "CD",
+                    "year": "1991",
+                    "description": "Dubbel-cd",
+                    "coverImage": "/images/Wilmer X - Mambo feber.jpg",
+                    "tracks": []
+                },
+                {
+                    "id": 1,
+                    "artist": "Wilmer X",
+                    "title": "Pontiac till himlen",
+                    "medium": "CD",
+                    "year": "1993",
+                    "description": "",
+                    "coverImage": "/images/Wilmer X -Pontiac till himlen.jpg",
+                    "tracks": []
+                }
+            ]
+        }
+    ],
+    "Klassiskt": [
+        {
+            "id": 0,
+            "name": "Franz Liszt",
+            "description": "",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Franz Liszt",
+                    "title": "The best of Liszt",
+                    "medium": "CD",
+                    "year": "1989",
+                    "description": "",
+                    "coverImage": "/Franz Liszt - The best of Liszt.jpg",
+                    "tracks": []
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Frederic Chopin",
+            "description": "",
+            "records": [
+                {
+                    "id": 0,
+                    "artist": "Frederic Chopin",
+                    "title": "Piano favoriter",
+                    "medium": "CD",
+                    "year": "1995",
+                    "description": "Framfört av Idil Biret",
+                    "coverImage": "/Chopin - Pianofavoriter.jpg",
+                    "tracks": []
+                }
+            ]
+        }
+    ]
+}
