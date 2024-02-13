@@ -1,17 +1,16 @@
 import { useContext, useRef } from 'react'
 import { CategoriesContext } from '../App.jsx'
-import { useLocation, useParams, Link } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import AddTracks from '../components/AddTracks.jsx'
 
 function AddRecordsPage() {
     const contextValue = useContext(CategoriesContext)
     let categories = contextValue.categories
 
-    const { categoryID } = useParams()
-    let [category] = categories.slice(categoryID, categoryID + 1)
-
     const location = useLocation()
-    const artist = location.state
+    const [artist, categoryID] = location.state
+
+    let [category] = categories.slice(categoryID, categoryID + 1)
 
     const addRecordForm = useRef(null)
     const recordTitle = useRef(null)
@@ -196,10 +195,9 @@ function AddRecordsPage() {
                 <br />
                 <button type="submit">Spara skiva</button>
             </form>
-            <br />
             <Link
-                to={'/pages/ArtistPage/' + categoryID}
-                state={artist}
+                to="/pages/ArtistPage/"
+                state={[artist, categoryID]}
                 className="backlink"
             >
                 Tillbaka

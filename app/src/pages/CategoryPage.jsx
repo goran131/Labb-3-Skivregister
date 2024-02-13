@@ -16,8 +16,8 @@ const CategoryPage = () => {
                     {category.artists.map((artist) => (
                         <div key={artist.id}>
                             <Link
-                                to={'/pages/ArtistPage/' + category.id}
-                                state={artist}
+                                to="/pages/ArtistPage/"
+                                state={[artist, category.id]}
                             >
                                 {artist.name}
                             </Link>

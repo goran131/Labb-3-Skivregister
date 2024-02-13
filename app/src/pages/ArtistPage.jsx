@@ -1,11 +1,9 @@
-import { useLocation, Link, useParams } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 import { useRef } from 'react'
 
 function ArtistPage() {
     const location = useLocation()
-    const artist = location.state
-
-    const { categoryID } = useParams()
+    const [artist, categoryID] = location.state
 
     const addRecordsButton = useRef(null)
 
@@ -25,7 +23,10 @@ function ArtistPage() {
                 <p>{artist.description}</p>
                 {artist.records.map((record) => (
                     <div key={record.id}>
-                        <Link to="/pages/RecordPage" state={record}>
+                        <Link
+                            to="/pages/RecordPage"
+                            state={[record, artist, categoryID]}
+                        >
                             {record.medium + ': ' + record.title}
                         </Link>
                     </div>
@@ -33,8 +34,8 @@ function ArtistPage() {
             </div>
             <br />
             <Link
-                to={'/pages/AddRecordsPage/' + categoryID}
-                state={artist}
+                to="/pages/AddRecordsPage"
+                state={[artist, categoryID]}
                 onLoad={changeText()}
             >
                 <button

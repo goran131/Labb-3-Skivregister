@@ -93,7 +93,12 @@ a.link-color {
 }
 
 .backlink {
+    margin-top: 30px;
+    clear: both;
+    float: left;
     text-align: center;
+    width: 100%;
+    display: block;
 }
 
 .imagesDiv {

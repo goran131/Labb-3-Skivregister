@@ -28,17 +28,14 @@ function App() {
                         path="/pages/CategoryPage"
                         element={<CategoryPage />}
                     />
-                    <Route
-                        path="/pages/ArtistPage/:categoryID"
-                        element={<ArtistPage />}
-                    />
+                    <Route path="/pages/ArtistPage" element={<ArtistPage />} />
                     <Route path="/pages/RecordPage" element={<RecordPage />} />
                     <Route
                         path="/pages/AddArtistPage/"
                         element={<AddArtistPage />}
                     />
                     <Route
-                        path="/pages/AddRecordsPage/:categoryID"
+                        path="/pages/AddRecordsPage"
                         element={<AddRecordsPage />}
                     />
                 </Routes>

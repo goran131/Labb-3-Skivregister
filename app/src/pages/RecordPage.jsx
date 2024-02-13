@@ -1,4 +1,3 @@
-import { useRef } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import ImagePopup from '../components/ImagePopup'
 import 'reactjs-popup/dist/index.css'
@@ -6,12 +5,12 @@ import css from './RecordPage.module.css'
 
 function RecordPage() {
     const location = useLocation()
-    const record = location.state
+    const [record, artist, categoryID] = location.state
 
     return (
         <>
             <div>
-                <h3>Artist: {record.artist}</h3>
+                <h3>Artist: {artist.name}</h3>
                 <h3>Skivtitel: {record.title}</h3>
                 <p>Utgivningsår: {record.year}</p>
 
@@ -40,6 +39,14 @@ function RecordPage() {
                     </div>
                 </div>
             </div>
+
+            <Link
+                to="/pages/ArtistPage/"
+                state={[artist, categoryID]}
+                className="backlink"
+            >
+                Tillbaka
+            </Link>
         </>
     )
 }
