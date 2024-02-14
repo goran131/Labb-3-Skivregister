@@ -1,5 +1,5 @@
 import { useContext, useRef } from 'react'
-import { CategoriesContext, jsonServerUrl } from '../App.jsx'
+import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.jsx'
 import AddTracks from '../components/AddTracks.jsx'
 
 function AddArtistPage() {
@@ -164,10 +164,9 @@ function AddArtistPage() {
     const uploadImage = async (imageFile) => {
         const formData = new FormData()
         formData.append('file', imageFile)
-        const urlEndpoint = 'http://localhost:5050/upload'
 
         try {
-            const result = await fetch(urlEndpoint, {
+            const result = await fetch(expressServerUrl, {
                 method: 'POST',
                 body: formData
             })
