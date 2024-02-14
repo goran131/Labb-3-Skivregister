@@ -1,5 +1,5 @@
 import { useContext, useRef } from 'react'
-import { CategoriesContext } from '../App.jsx'
+import { CategoriesContext, jsonServerUrl } from '../App.jsx'
 import { useLocation, Link } from 'react-router-dom'
 import AddTracks from '../components/AddTracks.jsx'
 
@@ -91,7 +91,7 @@ function AddRecordsPage() {
         }
 
         fetch(
-            'http://localhost:5030/categories/' + category.id,
+            jsonServerUrl + '/categories/' + category.id,
             requestOptions
         ).then((response) => {
             if (response.ok) {

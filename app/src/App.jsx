@@ -9,12 +9,14 @@ import AddArtistPage from './pages/AddArtistPage'
 import AddRecordsPage from './pages/AddRecordsPage'
 
 export const CategoriesContext = createContext()
+// export const jsonServerUrl = 'http://localhost:5030'
+export const jsonServerUrl = 'https://api-json-server-xi.vercel.app'
 
 function App() {
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5030/categories')
+        fetch(jsonServerUrl + '/categories')
             .then((response) => response.json())
             .then((categories) => setCategories(categories))
     }, [])
@@ -28,6 +30,7 @@ function App() {
                         path="/pages/CategoryPage"
                         element={<CategoryPage />}
                     />
+                    <Route path="../api-json-server" />
                     <Route path="/pages/ArtistPage" element={<ArtistPage />} />
                     <Route path="/pages/RecordPage" element={<RecordPage />} />
                     <Route

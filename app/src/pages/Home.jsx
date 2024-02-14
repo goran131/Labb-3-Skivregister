@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useState, useEffect, useContext } from 'react'
+import { useContext } from 'react'
 import { CategoriesContext } from '../App.jsx'
 
 function Home() {

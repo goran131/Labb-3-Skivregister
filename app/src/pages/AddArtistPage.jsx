@@ -1,6 +1,5 @@
 import { useContext, useRef } from 'react'
-import { Link } from 'react-router-dom'
-import { CategoriesContext } from '../App.jsx'
+import { CategoriesContext, jsonServerUrl } from '../App.jsx'
 import AddTracks from '../components/AddTracks.jsx'
 
 function AddArtistPage() {
@@ -54,19 +53,18 @@ function AddArtistPage() {
             body: JSON.stringify(category)
         }
 
-        fetch(
-            'http://localhost:5030/categories/' + categoryID,
-            requestOptions
-        ).then((response) => {
-            if (response.ok) {
-                alert('Ny artist sparad')
-                contextValue.setCategories(newCategories)
-                disableArtistForm()
-                addRecordDiv.current.style.display = 'block'
-            } else {
-                console.error('Något gick fel vid spara artist')
+        fetch(jsonServerUrl + '/categories/' + categoryID, requestOptions).then(
+            (response) => {
+                if (response.ok) {
+                    alert('Ny artist sparad')
+                    contextValue.setCategories(newCategories)
+                    disableArtistForm()
+                    addRecordDiv.current.style.display = 'block'
+                } else {
+                    console.error('Något gick fel vid spara artist')
+                }
             }
-        })
+        )
     }
 
     const disableArtistForm = () => {
@@ -150,7 +148,7 @@ function AddArtistPage() {
         }
 
         fetch(
-            'http://localhost:5030/categories/' + category.id,
+            jsonServerUrl + '/categories/' + category.id,
             requestOptions
         ).then((response) => {
             if (response.ok) {
