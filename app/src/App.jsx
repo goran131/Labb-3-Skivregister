@@ -12,7 +12,7 @@ export const CategoriesContext = createContext()
 
 // export const jsonServerUrl = 'http://localhost:5030'
 // export const expressServerUrl = 'http://localhost:5050/upload'
-export const jsonServerUrl = 'labb-3-skivregister.vercel.app'
+export const jsonServerUrl = 'labb-3-skivregister.vercel.app/api-json-server'
 export const expressServerUrl = 'labb-3-skivregister.vercel.app/upload'
 
 // export const jsonServerUrl = 'https://api-json-server-xi.vercel.app'

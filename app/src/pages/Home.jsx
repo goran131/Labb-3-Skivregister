@@ -11,7 +11,7 @@ function Home() {
             <div>
                 <p>
                     Här kan du lägga upp hela din skivsamling grupperad efter
-                    musikkategorier. Du kan även skapa egna kategorier.
+                    musikkategorier.
                 </p>
                 <div>
                     <h3>Musikkategorier</h3>
