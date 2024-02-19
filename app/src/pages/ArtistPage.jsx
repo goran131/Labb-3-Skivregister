@@ -1,7 +1,7 @@
 import { useLocation, Link } from 'react-router-dom'
 import { CategoriesContext, jsonServerUrl } from '../App.jsx'
 import { useContext, useRef, useState } from 'react'
-import removeIcon from '/src/assets/remove-icon.webp'
+import RemoveIcon from '/src/assets/remove-icon.webp'
 
 function ArtistPage() {
     const location = useLocation()
@@ -81,7 +81,7 @@ function ArtistPage() {
                             {record.medium + ': ' + record.title}
                         </Link>
                         <img
-                            src={removeIcon}
+                            src={RemoveIcon}
                             className="remove-icon"
                             onClick={() => {
                                 return removeRecord(record)
