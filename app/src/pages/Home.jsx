@@ -16,7 +16,7 @@ function Home() {
                 <div>
                     <h3>Musikkategorier</h3>
                     {categories.map((category) => (
-                        <div key={category.id}>
+                        <div key={category.id} className="categories">
                             <Link to="/pages/CategoryPage" state={category}>
                                 {category.name}
                             </Link>

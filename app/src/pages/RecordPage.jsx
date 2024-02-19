@@ -42,7 +42,7 @@ function RecordPage() {
 
             <Link
                 to="/pages/ArtistPage/"
-                state={[artist, categoryID]}
+                state={[artist.id, categoryID]}
                 className="backlink"
             >
                 Tillbaka

@@ -196,7 +196,7 @@ function AddRecordsPage() {
             </form>
             <Link
                 to="/pages/ArtistPage/"
-                state={[artist, categoryID]}
+                state={[artist.id, category.id]}
                 className="backlink"
             >
                 Tillbaka

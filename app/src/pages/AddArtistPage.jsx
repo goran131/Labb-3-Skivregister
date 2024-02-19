@@ -4,7 +4,7 @@ import AddTracks from '../components/AddTracks.jsx'
 
 function AddArtistPage() {
     const contextValue = useContext(CategoriesContext)
-    const categories = contextValue.categories
+    let categories = contextValue.categories
 
     let newArtist = null
     let category = null
@@ -44,8 +44,7 @@ function AddArtistPage() {
 
         category.artists = [...category.artists, newArtist]
 
-        let newCategories = categories
-        newCategories.splice(categoryID, 1, category)
+        categories.splice(categoryID, 1, category)
 
         const requestOptions = {
             method: 'PUT',
@@ -57,7 +56,7 @@ function AddArtistPage() {
             (response) => {
                 if (response.ok) {
                     alert('Ny artist sparad')
-                    contextValue.setCategories(newCategories)
+                    contextValue.setCategories(categories)
                     disableArtistForm()
                     addRecordDiv.current.style.display = 'block'
                 } else {

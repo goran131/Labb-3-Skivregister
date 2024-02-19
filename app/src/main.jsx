@@ -14,9 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Link className="link" to="/pages/AddArtistPage">
                     Lägg till artister
                 </Link>
-                <Link className="link" to="/CategoryPage">
-                    Ta bort artister
-                </Link>
             </nav>
             <h1>Skivregister</h1>
             <App />

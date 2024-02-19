@@ -1,5 +1,4 @@
 import { useLocation, Link } from 'react-router-dom'
-// import { React, useState, useEffect } from 'react'
 
 const CategoryPage = () => {
     const location = useLocation()
@@ -14,10 +13,10 @@ const CategoryPage = () => {
                     <h3>Artister</h3>
 
                     {category.artists.map((artist) => (
-                        <div key={artist.id}>
+                        <div key={artist.id} className="artists">
                             <Link
                                 to="/pages/ArtistPage/"
-                                state={[artist, category.id]}
+                                state={[artist.id, category.id]}
                             >
                                 {artist.name}
                             </Link>

@@ -1,0 +1,3 @@
+//styleMocks.js
+
+module.exports = {}

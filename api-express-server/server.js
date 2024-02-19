@@ -5,7 +5,10 @@ const cors = require('cors')
 const app = express()
 const port = 5050
 
-app.use(cors({ origin: 'http://localhost:5173' }))
+// const originUrl = 'http://localhost:5173'
+const originUrl = 'https://labb-3-skivregister.vercel.app/'
+
+app.use(cors({ origin: originUrl }))
 
 const uploadPath = path.join(__dirname, '../app/public/images')
 

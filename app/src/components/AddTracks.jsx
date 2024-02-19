@@ -102,7 +102,7 @@ function AddTracks() {
             <br />
             <div ref={moreTracksDiv} className="notVisible">
                 <div>
-                    <label htmlFor="track11">&nbsp;11:</label>
+                    <label htmlFor="track11">11:</label>
                     <input
                         type="text"
                         name="track11"
@@ -110,7 +110,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track12">&nbsp;12:</label>
+                    <label htmlFor="track12">12:</label>
                     <input
                         type="text"
                         name="track12"
@@ -118,7 +118,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track13">&nbsp;13:</label>
+                    <label htmlFor="track13">13:</label>
                     <input
                         type="text"
                         name="track13"
@@ -126,7 +126,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track14">&nbsp;14:</label>
+                    <label htmlFor="track14">14:</label>
                     <input
                         type="text"
                         name="track14"
@@ -134,7 +134,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track15">&nbsp;15:</label>
+                    <label htmlFor="track15">15:</label>
                     <input
                         type="text"
                         name="track15"
@@ -142,7 +142,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track16">&nbsp;16:</label>
+                    <label htmlFor="track16">16:</label>
                     <input
                         type="text"
                         name="track16"
@@ -150,7 +150,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track17">&nbsp;17:</label>
+                    <label htmlFor="track17">17:</label>
                     <input
                         type="text"
                         name="track17"
@@ -158,7 +158,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track18">&nbsp;18:</label>
+                    <label htmlFor="track18">18:</label>
                     <input
                         type="text"
                         name="track18"
@@ -166,7 +166,7 @@ function AddTracks() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="track19">&nbsp;19:</label>
+                    <label htmlFor="track19">19:</label>
                     <input
                         type="text"
                         name="track19"
