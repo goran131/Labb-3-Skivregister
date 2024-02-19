@@ -80,7 +80,7 @@ function ArtistPage() {
                             {record.medium + ': ' + record.title}
                         </Link>
                         <img
-                            src="/src/assets/remove-icon.webp"
+                            src="/src/assets/remove-icon.png"
                             className="remove-icon"
                             onClick={() => {
                                 return removeRecord(record)
