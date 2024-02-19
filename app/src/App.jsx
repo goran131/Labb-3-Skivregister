@@ -15,9 +15,6 @@ export const CategoriesContext = createContext()
 export const jsonServerUrl = 'labb-3-skivregister.vercel.app/api-json-server'
 export const expressServerUrl = 'labb-3-skivregister.vercel.app/upload'
 
-// export const jsonServerUrl = 'https://api-json-server-xi.vercel.app'
-// export const expressServerUrl = 'https://api-express-server.vercel.app/upload'
-
 function App() {
     const [categories, setCategories] = useState([])
 
