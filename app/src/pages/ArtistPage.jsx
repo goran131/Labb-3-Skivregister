@@ -1,7 +1,6 @@
 import { useLocation, Link } from 'react-router-dom'
 import { CategoriesContext, jsonServerUrl } from '../App.jsx'
 import { useContext, useRef, useState } from 'react'
-import RemoveIcon from '/src/assets/remove-icon.webp'
 
 function ArtistPage() {
     const location = useLocation()
@@ -52,9 +51,12 @@ function ArtistPage() {
             requestOptions
         ).then((response) => {
             if (response.ok) {
-                alert('Skivan är ' + record.title + ' är borttagen')
+                alert(
+                    'Skivan är ' +
+                        record.title +
+                        ' är borttagen. Obs skivan syns fortfarande på denna sidan. Gå tillbaka till kategorisidan och välj artisten igen.'
+                )
                 contextValue.setCategories(categories)
-                window.location.reload()
             } else {
                 console.error('Något gick fel vid borttagning av skiva')
             }
@@ -81,7 +83,7 @@ function ArtistPage() {
                             {record.medium + ': ' + record.title}
                         </Link>
                         <img
-                            src={RemoveIcon}
+                            src="/remove-icon.webp"
                             className="remove-icon"
                             onClick={() => {
                                 return removeRecord(record)
