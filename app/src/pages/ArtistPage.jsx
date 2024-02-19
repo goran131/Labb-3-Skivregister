@@ -1,7 +1,7 @@
 import { useLocation, Link } from 'react-router-dom'
 import { CategoriesContext, jsonServerUrl } from '../App.jsx'
 import { useContext, useRef, useState } from 'react'
-import removeIcon from '/src/assets/remove-icon.png'
+import removeIcon from '/src/assets/remove-icon.webp'
 
 function ArtistPage() {
     const location = useLocation()
