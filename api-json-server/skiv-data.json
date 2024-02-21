@@ -67,6 +67,16 @@
             {
               "id": 1,
               "artist": "ZZ Top",
+              "title": "Recycler",
+              "description": "",
+              "coverImage": "/images/ZZ Top - Recycler.jpg",
+              "year": "1990",
+              "medium": "CD",
+              "tracks": []
+            },
+            {
+              "id": 2,
+              "artist": "ZZ Top",
               "title": "Greatest Hits",
               "description": "",
               "coverImage": "/images/ZZ Top - Greatest Hits.jpg",
@@ -75,7 +85,17 @@
               "tracks": []
             },
             {
-              "id": 2,
+              "id": 3,
+              "artist": "ZZ Top",
+              "title": "Antenna",
+              "description": "",
+              "coverImage": "/images/ZZ Top - Antenna.jpg",
+              "year": "1994",
+              "medium": "CD",
+              "tracks": []
+            },
+            {
+              "id": 4,
               "artist": "ZZ Top",
               "title": "One foot in the blues",
               "description": "",
@@ -85,7 +105,7 @@
               "tracks": []
             },
             {
-              "id": 3,
+              "id": 5,
               "artist": "ZZ Top",
               "title": "Mescalero",
               "description": "",
@@ -1017,7 +1037,7 @@
         },
         {
           "id": 8,
-          "name": "Europe",
+          "name": "Göran",
           "description": "",
           "records": []
         }
@@ -1224,6 +1244,76 @@
               "tracks": []
             }
           ]
+        },
+        {
+          "id": 2,
+          "name": "Beethoven",
+          "description": "",
+          "records": [
+            {
+              "id": 0,
+              "artist": "Beethoven",
+              "title": "In rock we trust",
+              "description": "",
+              "coverImage": "/images/lp-record-org.jpg",
+              "year": "",
+              "medium": "LP",
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Country",
+      "artists": [
+        {
+          "id": 0,
+          "name": "Kenny Rogers",
+          "description": "",
+          "records": []
+        },
+        {
+          "id": 1,
+          "name": "Dolly Parton",
+          "description": "",
+          "records": [
+            {
+              "id": 0,
+              "artist": "Dolly Parton",
+              "title": "Down for the count",
+              "description": "",
+              "coverImage": "/images/Magnus Uggla - Klassiska masterverk.jpg",
+              "year": "",
+              "medium": "CD",
+              "tracks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "name": "Hiphop",
+      "artists": [
+        {
+          "id": 0,
+          "name": "Eminem",
+          "description": "Ameriskansk vit rappare",
+          "records": []
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Knullpop",
+      "artists": [
+        {
+          "id": 0,
+          "name": "Y&T",
+          "description": "",
+          "records": []
         }
       ]
     }

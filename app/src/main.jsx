@@ -14,6 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Link className="link" to="/pages/AddArtistPage">
                     Lägg till artister
                 </Link>
+                <Link className="link" to="/pages/AddCategoriesPage">
+                    Skapa nya kategorier
+                </Link>
             </nav>
             <h1>Skivregister</h1>
             <App />

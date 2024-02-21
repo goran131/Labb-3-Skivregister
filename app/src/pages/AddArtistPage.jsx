@@ -1,4 +1,5 @@
 import { useContext, useRef } from 'react'
+import { useLocation } from 'react-router-dom'
 import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.jsx'
 import AddTracks from '../components/AddTracks.jsx'
 
@@ -9,19 +10,38 @@ function AddArtistPage() {
     let newArtist = null
     let category = null
 
+    const location = useLocation()
+    let categoryID = location.state // Om categoryID finns i location.state så ska den kategorin vara förvald
+
     const categorySelector = useRef(null)
+
+    if (categoryID != null) {
+        setTimeout(() => {
+            categorySelector.current.selectedIndex = categoryID
+        }, 50)
+    }
+
+    // setUseRefs() // Det går inte att anropa setUseRefs before initialisation. Varför
+
     const artistName = useRef(null)
     const artistDescription = useRef(null)
     const saveArtistButton = useRef(null)
+    const messageSavedArtist = useRef(null)
+
+    const errorArtistName = useRef(null)
 
     const addRecordDiv = useRef(null)
-
     const addRecordForm = useRef(null)
     const recordTitle = useRef(null)
     const recordDescription = useRef(null)
     const recordYear = useRef(null)
     const mediumSelector = useRef(null)
     const coverImageFile = useRef(null)
+    const messageSavedRecord = useRef(null)
+
+    const errorCoverImage = useRef(null)
+    const errorRecord = useRef(null)
+    const errorRecordTitle = useRef(null)
 
     const SaveNewArtist = (event) => {
         event.preventDefault()
@@ -29,11 +49,17 @@ function AddArtistPage() {
         let categoryID = event.target.categorySelector.selectedOptions[0].value
 
         category = categories.slice(categoryID, categoryID + 1)
-
         category = category[0]
+
+        // validerar bara att artistname är inskrivet
+        if (event.target.artistName.value == '') {
+            errorArtistName.current.style.display = 'block'
+            return
+        }
 
         let artistID = category.artists.length
         let artistName = event.target.artistName.value
+
         let artistDescription = event.target.artistDescription.value
         newArtist = {
             id: artistID,
@@ -55,8 +81,10 @@ function AddArtistPage() {
         fetch(jsonServerUrl + '/categories/' + categoryID, requestOptions).then(
             (response) => {
                 if (response.ok) {
-                    alert('Ny artist sparad')
                     contextValue.setCategories(categories)
+                    showMessage(messageSavedArtist)
+                    errorArtistName.current.style.display = 'none'
+
                     disableArtistForm()
                     addRecordDiv.current.style.display = 'block'
                 } else {
@@ -64,6 +92,35 @@ function AddArtistPage() {
                 }
             }
         )
+    }
+
+    const showMessage = (messageBox) => {
+        messageBox.current.style.display = 'inline-block'
+        setTimeout(() => {
+            messageBox.current.style.display = 'none'
+        }, 5000)
+    }
+
+    const setUseRefs = () => {
+        const artistName = useRef(null)
+        const artistDescription = useRef(null)
+        const saveArtistButton = useRef(null)
+        const messageSavedArtist = useRef(null)
+
+        const errorArtistName = useRef(null)
+
+        const addRecordDiv = useRef(null)
+        const addRecordForm = useRef(null)
+        const recordTitle = useRef(null)
+        const recordDescription = useRef(null)
+        const recordYear = useRef(null)
+        const mediumSelector = useRef(null)
+        const coverImageFile = useRef(null)
+        const messageSavedRecord = useRef(null)
+
+        const errorCoverImage = useRef(null)
+        const errorRecordTitle = useRef(null)
+        const errorRecord = useRef(null)
     }
 
     const disableArtistForm = () => {
@@ -75,6 +132,10 @@ function AddArtistPage() {
 
     const saveRecord = (event) => {
         event.preventDefault()
+
+        if (validateRecordForm() == false) {
+            return
+        }
 
         let recordID = newArtist.records.length
         let imageUrl = /images/ + event.target.coverImageFile.files[0].name
@@ -151,8 +212,8 @@ function AddArtistPage() {
             requestOptions
         ).then((response) => {
             if (response.ok) {
-                alert('Skivan är sparad')
                 contextValue.setCategories(newCategories)
+                showMessage(messageSavedRecord)
                 resetRecordForm()
             } else {
                 console.error('Något gick fel vid spara skiva')
@@ -176,12 +237,37 @@ function AddArtistPage() {
         }
     }
 
+    // Returnerar true om det inte finns några fel
+    const validateRecordForm = () => {
+        let noErrors = true
+
+        if (recordTitle.current.value == '') {
+            errorRecordTitle.current.style.display = 'block'
+            noErrors = false
+        }
+
+        if (coverImageFile.current.value == '') {
+            errorCoverImage.current.style.display = 'block'
+            noErrors = false
+        }
+
+        if (noErrors == false) {
+            errorRecord.current.style.display = 'inline'
+            errorRecord.current.style.margin = '0 0 0 30px'
+        }
+
+        return noErrors
+    }
+
     const resetRecordForm = () => {
         recordTitle.current.value = ''
         recordDescription.current.value = ''
         recordYear.current.value = ''
         mediumSelector.current.selectValue = 'LP'
         coverImageFile.current.value = ''
+        errorRecordTitle.current.style.display = 'none'
+        errorCoverImage.current.style.display = 'none'
+        errorRecord.current.style.display = 'none'
     }
 
     return (
@@ -207,6 +293,9 @@ function AddArtistPage() {
                         name="artistName"
                         className="textInput"
                     ></input>
+                    <div ref={errorArtistName} className="notVisible errorText">
+                        Ange artistnamn!
+                    </div>
                 </div>
                 <div>
                     <label htmlFor="artistDescription">Beskrivning</label>
@@ -222,8 +311,15 @@ function AddArtistPage() {
                 <button type="submit" ref={saveArtistButton}>
                     Spara artist
                 </button>
+                <div className="outer-message-box">
+                    <div
+                        ref={messageSavedArtist}
+                        className="notVisible messageBox"
+                    >
+                        Ny artist sparad!
+                    </div>
+                </div>
             </form>
-            <br />
             <br />
 
             <div ref={addRecordDiv} className="notVisible">
@@ -242,6 +338,12 @@ function AddArtistPage() {
                             name="recordTitle"
                             className="textInput"
                         ></input>
+                        <div
+                            ref={errorRecordTitle}
+                            className="notVisible errorText"
+                        >
+                            Ange skivans titel!
+                        </div>
                     </div>
                     <div>
                         <label htmlFor="recordDescription">Beskrivning:</label>
@@ -254,7 +356,7 @@ function AddArtistPage() {
                         ></input>
                     </div>
                     <div>
-                        <label htmlFor="recordDescription">Utgivningsår:</label>
+                        <label htmlFor="recordYear">Utgivningsår:</label>
                         <input
                             id="recordYear"
                             ref={recordYear}
@@ -289,6 +391,12 @@ function AddArtistPage() {
                             ref={coverImageFile}
                             name="coverImageFile"
                         ></input>
+                        <div
+                            ref={errorCoverImage}
+                            className="notVisible errorText"
+                        >
+                            Välj en omslagsbild!
+                        </div>
                     </div>
 
                     <AddTracks />
@@ -296,6 +404,21 @@ function AddArtistPage() {
                     <br />
 
                     <button type="submit">Spara skiva</button>
+
+                    <div ref={errorRecord} className="notVisible errorText">
+                        Det finns fel i formuläret!
+                    </div>
+
+                    <div className="outer-messageBox">
+                        <div
+                            ref={messageSavedRecord}
+                            className="notVisible messageBox"
+                        >
+                            Skivan är sparad!
+                        </div>
+                    </div>
+                    <br />
+                    <br />
                 </form>
             </div>
         </>

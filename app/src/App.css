@@ -119,6 +119,22 @@ a.link-color {
     cursor: pointer;
 }
 
+.outer-message-box {
+    height: 40px;
+}
+.messageBox {
+    margin-top: 30px;
+    color: white;
+    background-color: #61c961;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+
+.errorText {
+    color: red;
+    margin-bottom: 15px;
+}
+
 .popup-content {
     padding-bottom: 0 !important;
     max-width: 650px;
