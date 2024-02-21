@@ -1,1321 +1,1280 @@
 {
-  "categories": [
-    {
-      "id": "0",
-      "name": "Rock",
-      "artists": [
+    "categories": [
         {
-          "id": 0,
-          "name": "ZZ Top",
-          "description": "Amerikansk sydstatsrock",
-          "records": [
-            {
-              "id": 0,
-              "artist": "ZZ Top",
-              "title": "Eliminator",
-              "description": "",
-              "coverImage": "/images/ZZ Top - Eliminator.jpg",
-              "year": "1983",
-              "medium": "LP",
-              "tracks": [
+            "id": "0",
+            "name": "Rock",
+            "artists": [
                 {
-                  "id": 0,
-                  "name": "Gimme All Your Lovin"
+                    "id": 0,
+                    "name": "ZZ Top",
+                    "description": "Amerikansk sydstatsrock",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "ZZ Top",
+                            "title": "Eliminator",
+                            "description": "",
+                            "coverImage": "/images/ZZ Top - Eliminator.jpg",
+                            "year": "1983",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Gimme All Your Lovin"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Got Me Under Pressure"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Sharp Dressed Man"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "I Need You Tonight"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "I Got The Six"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Legs"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Thug"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "TV Dinners"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Dirty dog"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "If I Could Only Flag Her Down"
+                                },
+                                {
+                                    "id": 10,
+                                    "name": "Bad girl"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "artist": "ZZ Top",
+                            "title": "Recycler",
+                            "description": "",
+                            "coverImage": "/images/ZZ Top - Recycler.jpg",
+                            "year": "1990",
+                            "medium": "CD",
+                            "tracks": []
+                        },
+                        {
+                            "id": 2,
+                            "artist": "ZZ Top",
+                            "title": "Greatest Hits",
+                            "description": "",
+                            "coverImage": "/images/ZZ Top - Greatest Hits.jpg",
+                            "year": "1992",
+                            "medium": "CD",
+                            "tracks": []
+                        },
+                        {
+                            "id": 3,
+                            "artist": "ZZ Top",
+                            "title": "Antenna",
+                            "description": "",
+                            "coverImage": "/images/ZZ Top - Antenna.jpg",
+                            "year": "1994",
+                            "medium": "CD",
+                            "tracks": []
+                        },
+                        {
+                            "id": 4,
+                            "artist": "ZZ Top",
+                            "title": "One foot in the blues",
+                            "description": "",
+                            "coverImage": "/images/ZZ Top - One foot in the blues.jpg",
+                            "year": "1994",
+                            "medium": "LP",
+                            "tracks": []
+                        },
+                        {
+                            "id": 5,
+                            "artist": "ZZ Top",
+                            "title": "Mescalero",
+                            "description": "",
+                            "coverImage": "/images/ZZ Top - Mescalero.jpg",
+                            "year": "2003",
+                            "medium": "LP",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 1,
-                  "name": "Got Me Under Pressure"
-                },
-                {
-                  "id": 2,
-                  "name": "Sharp Dressed Man"
-                },
-                {
-                  "id": 3,
-                  "name": "I Need You Tonight"
-                },
-                {
-                  "id": 4,
-                  "name": "I Got The Six"
-                },
-                {
-                  "id": 5,
-                  "name": "Legs"
-                },
-                {
-                  "id": 6,
-                  "name": "Thug"
-                },
-                {
-                  "id": 7,
-                  "name": "TV Dinners"
-                },
-                {
-                  "id": 8,
-                  "name": "Dirty dog"
-                },
-                {
-                  "id": 9,
-                  "name": "If I Could Only Flag Her Down"
-                },
-                {
-                  "id": 10,
-                  "name": "Bad girl"
+                    "id": 1,
+                    "name": "Meat Loaf",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Meat Loaf",
+                            "title": "Bat out of hell",
+                            "description": "",
+                            "coverImage": "/images/Meat Loaf - Bat out of Hell.jpg",
+                            "year": "1977",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Bat out of hell"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "You took the words right out of my mouth (Hot summer night)"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Heaven can wait"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "All Revved Up With No Place To Go"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Two Out Of Three Ain't Bad"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Paradise By The Dash Board Light"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "artist": "Meat Loaf",
+                            "title": "Bad attitude",
+                            "description": "",
+                            "coverImage": "/images/Meat loaf - Bad attitude.jpg",
+                            "year": "1984",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Bad attitude"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Modern girl"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Nowhere Fast"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Surf's up"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Piece Of The Action"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Jumpin' the gun"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Cheatin' In Your Dreams"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Don't leave your mark on me"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Sailor to a siren"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "artist": "Meat Loaf",
+                            "title": "Blind before I stop",
+                            "description": "",
+                            "coverImage": "/images/Meat Loaf - Blind before I stop.jpg",
+                            "year": "1986",
+                            "medium": "LP",
+                            "tracks": []
+                        },
+                        {
+                            "id": 3,
+                            "artist": "Meat Loaf",
+                            "title": "Bat out of hell II (Back into hell)",
+                            "description": "",
+                            "coverImage": "/images/Meat Loaf - Bat out of hell II.jpg",
+                            "year": "1993",
+                            "medium": "CD",
+                            "tracks": []
+                        },
+                        {
+                            "id": 4,
+                            "artist": "Meat Loaf",
+                            "title": "Midnight at the lost and found",
+                            "description": "",
+                            "coverImage": "/images/Meat Loaf - Midnight at the lost and found.jpg",
+                            "year": "1983",
+                            "medium": "CD",
+                            "tracks": []
+                        },
+                        {
+                            "id": 5,
+                            "artist": "Meat Loaf",
+                            "title": "Rock’n’roll hero",
+                            "description": "Samlingsalbum",
+                            "coverImage": "/images/Meat loaf - Rock 'n' roll hero.jpg",
+                            "year": "2001",
+                            "medium": "CD",
+                            "tracks": []
+                        }
+                    ]
                 }
-              ]
-            },
-            {
-              "id": 1,
-              "artist": "ZZ Top",
-              "title": "Recycler",
-              "description": "",
-              "coverImage": "/images/ZZ Top - Recycler.jpg",
-              "year": "1990",
-              "medium": "CD",
-              "tracks": []
-            },
-            {
-              "id": 2,
-              "artist": "ZZ Top",
-              "title": "Greatest Hits",
-              "description": "",
-              "coverImage": "/images/ZZ Top - Greatest Hits.jpg",
-              "year": "1992",
-              "medium": "CD",
-              "tracks": []
-            },
-            {
-              "id": 3,
-              "artist": "ZZ Top",
-              "title": "Antenna",
-              "description": "",
-              "coverImage": "/images/ZZ Top - Antenna.jpg",
-              "year": "1994",
-              "medium": "CD",
-              "tracks": []
-            },
-            {
-              "id": 4,
-              "artist": "ZZ Top",
-              "title": "One foot in the blues",
-              "description": "",
-              "coverImage": "/images/ZZ Top - One foot in the blues.jpg",
-              "year": "1994",
-              "medium": "LP",
-              "tracks": []
-            },
-            {
-              "id": 5,
-              "artist": "ZZ Top",
-              "title": "Mescalero",
-              "description": "",
-              "coverImage": "/images/ZZ Top - Mescalero.jpg",
-              "year": "2003",
-              "medium": "LP",
-              "tracks": []
-            }
-          ]
+            ]
         },
         {
-          "id": 1,
-          "name": "Meat Loaf",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Meat Loaf",
-              "title": "Bat out of hell",
-              "description": "",
-              "coverImage": "/images/Meat Loaf - Bat out of Hell.jpg",
-              "year": "1977",
-              "medium": "LP",
-              "tracks": [
+            "id": "1",
+            "name": "Hårdrock",
+            "artists": [
                 {
-                  "id": 0,
-                  "name": "Bat out of hell"
+                    "id": 0,
+                    "name": "AC/DC",
+                    "description": "Australienskt hårdrockband med rötterna från Skottland",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "AC/DC",
+                            "title": "Let there be rock",
+                            "medium": "CD",
+                            "year": "1977",
+                            "description": "AC/DC:s fjärde studioalbum. Bon scott på sång.",
+                            "coverImage": "/images/AC-DC - Let there be rock.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 1,
+                            "artist": "AC/DC",
+                            "title": "If you want blood you've got it",
+                            "medium": "LP",
+                            "year": "1978",
+                            "description": "AC/DC:s första livealbum. Det enda live albumet med Bon scott på sång.",
+                            "coverImage": "/images/AC-DC - If you want blood youve got it.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 2,
+                            "artist": "AC/DC",
+                            "title": "If you want blood you've got it",
+                            "medium": "CD",
+                            "year": "1978",
+                            "description": "AC/DC:s första livealbum. Bon scott på sång ",
+                            "coverImage": "/images/AC-DC - If you want blood youve got it.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 3,
+                            "artist": "AC/DC",
+                            "title": "Highway to hell",
+                            "medium": "CD",
+                            "year": "1979",
+                            "description": "AC/DC:s sjätte studioalbum. Det sista albumet med Bon scott på sång ",
+                            "coverImage": "/images/AC-DC - Highway to hell.jpg",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Highway to hell"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Girls got rhythm"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Walk all over you"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Touch too much"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Beating around the bush"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Shot down in flames"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Get it hot"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "If you want blood you've got it"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Love hungry man"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Night prowler"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 4,
+                            "artist": "AC/DC",
+                            "title": "Back in black",
+                            "medium": "CD",
+                            "year": "1980",
+                            "description": "AC/DC:s sjunde studioalbum. Det första albumet med Brian Johnson på sång ",
+                            "coverImage": "/images/AC-DC - Back in black.jpg",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Hells bells"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Shoot to thrill"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "What do you do for money honey"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Given the dog a bone"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Let me put my love into you"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Back in black"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "You shook me all night long"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Have a drink on me"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Shake a leg"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Rock and roll ain't noise pollution"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 5,
+                            "artist": "AC/DC",
+                            "title": "For those about to rock We salute you",
+                            "medium": "LP",
+                            "year": "1981",
+                            "description": "AC/DC:s åttonde studioalbum. Det andra albumet med Brian Johnson på sång.",
+                            "coverImage": "/images/AC-DC - For those about to rock.jpg",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "For those about to rock (We salute you)"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Put the finger on you"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Lets get it up"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Inject the venom"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Snowballed"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Evil walks"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "C.O.D."
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Breaking the rules"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Night of the long knifes"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Spellbpound"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 6,
+                            "artist": "AC/DC",
+                            "title": "For those about to rock We salute you",
+                            "medium": "CD",
+                            "year": "1981",
+                            "description": "AC/DC:s åttonde studioalbum. Det andra albumet med Brian Johnson på sång.",
+                            "coverImage": "/images/AC-DC - For those about to rock.jpg",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "For those about to rock (We salute you)"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Put the finger on you"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Lets get it up"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Inject the venom"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Snowballed"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Evil walks"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "C.O.D."
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Breaking the rules"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Night of the long knifes"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Spellbpound"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 7,
+                            "artist": "AC/DC",
+                            "title": "Flick of the switch",
+                            "medium": "LP",
+                            "year": "1983",
+                            "description": "AC/DC:s nionde studioalbum. Brian Johnson på sång.",
+                            "coverImage": "/images/AC-DC - Flick of the switch.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 8,
+                            "artist": "AC/DC",
+                            "title": "The razors edge",
+                            "medium": "CD",
+                            "year": "1990",
+                            "description": "AC/DC:s tolfte studioalbum. Brian Johnson på sång. Thunderstruck är med på denna skivan",
+                            "coverImage": "/images/AC-DC - The razors edge.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 9,
+                            "artist": "AC/DC",
+                            "title": "Stiff upper lip",
+                            "medium": "CD",
+                            "year": "2000",
+                            "description": "AC/DC:s fjortonde studioalbum. Brian Johnson på sång. ",
+                            "coverImage": "/images/AC-DC - Stiff upper lip.jpg",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 1,
-                  "name": "You took the words right out of my mouth (Hot summer night)"
+                    "id": 1,
+                    "name": "Deep Purple",
+                    "description": "Engelskt hårdrockband somm bildades 1968. Mest kända medlemmar är Ian Gillan - sång, Ritchie Blackmore - gitarr, Jon Lord - keyboards, Roger Glover - bas och Ian Paice - trummor. Andra namnkunniga personer som varit med i Deep Purple är David Coverdale - sång, Glenn Hughes - bas, Steve Morse - gitarr och Don Airey - keyboards. Alla utom Jon Lord lever fortfarande.",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Deep Purple",
+                            "title": "In rock",
+                            "medium": "LP",
+                            "year": "1970",
+                            "description": "In rock är Deep Purple fjärde studioalbum och det första med Ian Gillan på sång",
+                            "coverImage": "/images/Deep Purple - In rock.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 1,
+                            "artist": "Deep Purple",
+                            "title": "In live concert at the Royal Albert Hall",
+                            "medium": "LP",
+                            "year": "1970",
+                            "description": "Live inpelning tillsammans med Royal Philharmonic Orchestra.",
+                            "coverImage": "/images/Deep Purple - In live concert at the Royal Albert Hall.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 2,
+                            "artist": "Deep Purple",
+                            "title": "Machine head",
+                            "medium": "LP",
+                            "year": "1972",
+                            "description": "Smoke on the water och Highway star är med på denna skivan. Ian Gillan på sång.",
+                            "coverImage": "/images/Deep Purple - Machine head.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 3,
+                            "artist": "Deep Purple",
+                            "title": "Burn",
+                            "medium": "LP",
+                            "year": "1974",
+                            "description": "Första studioalbumet med David Coverdale på sång.",
+                            "coverImage": "/images/Deep Purple - Burn.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 4,
+                            "artist": "Deep Purple",
+                            "title": "Stormbringer",
+                            "medium": "CD",
+                            "year": "1974",
+                            "description": "Andra studioalbumet med David Coverdale på sång.",
+                            "coverImage": "/images/Deep Purple - Stormbringer.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 5,
+                            "artist": "Deep Purple",
+                            "title": "Made in Europe",
+                            "medium": "CD",
+                            "year": "1976",
+                            "description": "Live album inpspelat i Europa. David Coverdale på sång.",
+                            "coverImage": "/images/Deep Purple - Made in Europe.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 6,
+                            "artist": "Deep Purple",
+                            "title": "The best of",
+                            "medium": "CD",
+                            "year": "1987",
+                            "description": "Samlingsalbum.",
+                            "coverImage": "/images/Deep Purple - The best of.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 7,
+                            "artist": "Deep Purple",
+                            "title": "Nobody's perfect",
+                            "medium": "CD",
+                            "year": "1988",
+                            "description": "Dubbelt live album med Ian Gillan på sång.",
+                            "coverImage": "/images/Deep Purple - Nobodys perfect.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 8,
+                            "artist": "Deep Purple",
+                            "title": "The battle rages on",
+                            "medium": "CD",
+                            "year": "1993",
+                            "description": "Studioalbum med Ian Gillan på sång. Sista skivan med Ritchie Blackmore på gitarr",
+                            "coverImage": "/images/Deep Purple - The battle rages on.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 9,
+                            "artist": "Deep Purple",
+                            "title": "Rock giants",
+                            "medium": "CD",
+                            "year": "1993",
+                            "description": "Samlingsalbum.",
+                            "coverImage": "/images/Deep Purple - Rock giants.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 10,
+                            "artist": "Deep Purple",
+                            "title": "Purpendicular",
+                            "medium": "CD",
+                            "year": "1996",
+                            "description": "Studioalbum med Ian Gillan på sång. Första skivan med Steve Morse på gitarr",
+                            "coverImage": "/images/Deep Purple - Purpendicular.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 11,
+                            "artist": "Deep Purple",
+                            "title": "Abandon",
+                            "medium": "CD",
+                            "year": "1998",
+                            "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
+                            "coverImage": "/images/Deep Purple - Abandon.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 12,
+                            "artist": "Deep Purple",
+                            "title": "Bananas",
+                            "medium": "CD",
+                            "year": "2003",
+                            "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
+                            "coverImage": "/images/Deep Purple - Bananas.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 13,
+                            "artist": "Deep Purple",
+                            "title": "Infinite",
+                            "medium": "CD",
+                            "year": "2017",
+                            "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
+                            "coverImage": "/images/Deep Purple - Infinite.jpg",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 2,
-                  "name": "Heaven can wait"
+                    "id": 2,
+                    "name": "Y&T",
+                    "description": "Amerikanskt hårdrocksband",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Y&T",
+                            "title": "Down for the count",
+                            "description": "",
+                            "coverImage": "/images/Y&T - Down for the count.jpg",
+                            "year": "1985",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "In the name of rock"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "All american boy"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Anytime at all"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Anything for money"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Face like an angel"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Summertime girls"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Looks like troble"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Your Mama Don't Dance"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Don't tell me what to wear"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Hands of time"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                  "id": 3,
-                  "name": "All Revved Up With No Place To Go"
+                    "id": 3,
+                    "name": "Dio ",
+                    "description": "Ronnie James Dios soloprojekt",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Dio ",
+                            "title": "The collection",
+                            "description": "",
+                            "coverImage": "/images/Dio - The collection.webp",
+                            "year": "2003",
+                            "medium": "CD",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Holy diver"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Don't talk strangers"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Rainbow in the dark"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Stand up and shout (Live)"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Straight through the heart (live)"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "We rock"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "The last in line (live)"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Mystery"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "I speed at night"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Rock 'N' Roll Children"
+                                },
+                                {
+                                    "id": 10,
+                                    "name": "Hungry for heaven"
+                                },
+                                {
+                                    "id": 11,
+                                    "name": "King of rock and roll"
+                                },
+                                {
+                                    "id": 12,
+                                    "name": "Sacred heart (live)"
+                                },
+                                {
+                                    "id": 13,
+                                    "name": "Dream evil"
+                                },
+                                {
+                                    "id": 14,
+                                    "name": "I could have been a dreamer"
+                                },
+                                {
+                                    "id": 15,
+                                    "name": "Wild one"
+                                },
+                                {
+                                    "id": 16,
+                                    "name": "Jesus, Mary & The holy ghost"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                  "id": 4,
-                  "name": "Two Out Of Three Ain't Bad"
+                    "id": 4,
+                    "name": "Rainbow",
+                    "description": "Ritchie Blackmores soloprojekt",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Rainbow",
+                            "title": "Difficult to cure",
+                            "description": "Första albumet med Joe Lynn Turner på sång",
+                            "coverImage": "/images/Rainbow - Difficult to cure.jpg",
+                            "year": "1981",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "I surrender"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Spotlight kid"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "No release"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Magic"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Vielleicht das nachster zeit = Maybe Next Time"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Can't happen here"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Freedom fighter"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Midtown Tunnel Vision"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Difficult to cure (Beethoven's ninth)"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "artist": "Rainbow",
+                            "title": "Can't happen here",
+                            "description": "",
+                            "coverImage": "/images/Rainbow - Can't happen here.jpg",
+                            "year": "1981",
+                            "medium": "Vinylsingel",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Can't happen here"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Jealous lover"
+                                }
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "artist": "Rainbow",
+                            "title": "Down for the count",
+                            "description": "Första och enda albumet med Graham Bonnet på sång",
+                            "coverImage": "/images/Rainbow - Down to earth.jpg",
+                            "year": "1979",
+                            "medium": "LP",
+                            "tracks": []
+                        },
+                        {
+                            "id": 3,
+                            "artist": "Rainbow",
+                            "title": "Bent out of shape",
+                            "description": "",
+                            "coverImage": "/images/Rainbow - Bent out of shape.jpg",
+                            "year": "1983",
+                            "medium": "LP",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 5,
-                  "name": "Paradise By The Dash Board Light"
+                    "id": 5,
+                    "name": "Iron Maiden",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Iron Maiden",
+                            "title": "Powerslave",
+                            "description": "Brittiskt heavymetal band",
+                            "coverImage": "/images/Iron Maiden - Powerslave.jpg",
+                            "year": "1984",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Aces high"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "2 minutes to midnight"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Losfer Words (Big 'Orra)"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Flash of the blade"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "The duellists"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Back In The Village"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Powerslave"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Rime of the ancient mariner"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 6,
+                    "name": "Gary Moore",
+                    "description": "Nordirländsk hårdrockgitarist och sångare",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Gary Moore",
+                            "title": "Still got the blues",
+                            "description": "",
+                            "coverImage": "/images/Gary Moore - Still got the blues.jpg",
+                            "year": "1990",
+                            "medium": "LP",
+                            "tracks": []
+                        }
+                    ]
+                },
+                {
+                    "id": 7,
+                    "name": "Whitesnake",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Whitesnake",
+                            "title": "1987",
+                            "description": "",
+                            "coverImage": "/images/Whitesnake - 1987.jpg",
+                            "year": "",
+                            "medium": "LP",
+                            "tracks": [
+                                {
+                                    "id": 0,
+                                    "name": "Still of the night"
+                                },
+                                {
+                                    "id": 1,
+                                    "name": "Bad boys"
+                                },
+                                {
+                                    "id": 2,
+                                    "name": "Give me all your love"
+                                },
+                                {
+                                    "id": 3,
+                                    "name": "Looking for love"
+                                },
+                                {
+                                    "id": 4,
+                                    "name": "Crying in the rain"
+                                },
+                                {
+                                    "id": 5,
+                                    "name": "Is this love"
+                                },
+                                {
+                                    "id": 6,
+                                    "name": "Straight For The Heart"
+                                },
+                                {
+                                    "id": 7,
+                                    "name": "Don't Turn Away"
+                                },
+                                {
+                                    "id": 8,
+                                    "name": "Children Of The Night"
+                                },
+                                {
+                                    "id": 9,
+                                    "name": "Here I go again 87"
+                                },
+                                {
+                                    "id": 10,
+                                    "name": "You're gonna break my heart again"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": 8,
+                    "name": "Göran",
+                    "description": "",
+                    "records": []
                 }
-              ]
-            },
-            {
-              "id": 1,
-              "artist": "Meat Loaf",
-              "title": "Bad attitude",
-              "description": "",
-              "coverImage": "/images/Meat loaf - Bad attitude.jpg",
-              "year": "1984",
-              "medium": "LP",
-              "tracks": [
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Svensk pop/rock",
+            "artists": [
                 {
-                  "id": 0,
-                  "name": "Bad attitude"
+                    "id": 0,
+                    "name": "Stefan Andersson",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Stefan Andersson",
+                            "title": "Emperors day",
+                            "medium": "CD",
+                            "year": "1992",
+                            "description": "",
+                            "coverImage": "/images/Stefan Andersson - Emperors day.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 1,
+                            "artist": "Stefan Andersson",
+                            "title": "Walk right on",
+                            "medium": "CD",
+                            "year": "1993",
+                            "description": "",
+                            "coverImage": "/images/Stefan Andersson - Walk right on.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 2,
+                            "artist": "Stefan Andersson",
+                            "title": "Under a low-ceilinged sky",
+                            "medium": "CD",
+                            "year": "1996",
+                            "description": "",
+                            "coverImage": "/images/Stefan Andersson - Under a low-ceilinged sky.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 3,
+                            "artist": "Stefan Andersson",
+                            "title": "På svenska",
+                            "medium": "CD",
+                            "year": "1997",
+                            "description": "",
+                            "coverImage": "/images/Stefan Andersson - På svenska.jpg",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 1,
-                  "name": "Modern girl"
+                    "id": 1,
+                    "name": "Gyllene Tider",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Gyllene Tider",
+                            "title": "Dags att tänka på refrängen",
+                            "medium": "CD",
+                            "year": "2013",
+                            "description": "",
+                            "coverImage": "/images/Gyllene Tider - Dags att tänka på refrängen.jpg",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 2,
-                  "name": "Nowhere Fast"
+                    "id": 2,
+                    "name": "Wilmer X",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Wilmer X",
+                            "title": "Mambo feber",
+                            "medium": "CD",
+                            "year": "1991",
+                            "description": "Dubbel-cd",
+                            "coverImage": "/images/Wilmer X - Mambo feber.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 1,
+                            "artist": "Wilmer X",
+                            "title": "Pontiac till himlen",
+                            "medium": "CD",
+                            "year": "1993",
+                            "description": "",
+                            "coverImage": "/images/Wilmer X - Pontiac till himlen.jpg",
+                            "tracks": []
+                        }
+                    ]
                 },
                 {
-                  "id": 3,
-                  "name": "Surf's up"
-                },
-                {
-                  "id": 4,
-                  "name": "Piece Of The Action"
-                },
-                {
-                  "id": 5,
-                  "name": "Jumpin' the gun"
-                },
-                {
-                  "id": 6,
-                  "name": "Cheatin' In Your Dreams"
-                },
-                {
-                  "id": 7,
-                  "name": "Don't leave your mark on me"
-                },
-                {
-                  "id": 8,
-                  "name": "Sailor to a siren"
+                    "id": 3,
+                    "name": "Magnus Uggla",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Magnus Uggla",
+                            "title": "Klassika mästerverk",
+                            "description": "",
+                            "coverImage": "/images/Magnus Uggla - Klassiska masterverk.jpg",
+                            "year": "2002",
+                            "medium": "Dubbel-CD",
+                            "tracks": []
+                        }
+                    ]
                 }
-              ]
-            },
-            {
-              "id": 2,
-              "artist": "Meat Loaf",
-              "title": "Blind before I stop",
-              "description": "",
-              "coverImage": "/images/Meat Loaf - Blind before I stop.jpg",
-              "year": "1986",
-              "medium": "LP",
-              "tracks": []
-            },
-            {
-              "id": 3,
-              "artist": "Meat Loaf",
-              "title": "Bat out of hell II (Back into hell)",
-              "description": "",
-              "coverImage": "/images/Meat Loaf - Bat out of hell II.jpg",
-              "year": "1993",
-              "medium": "CD",
-              "tracks": []
-            },
-            {
-              "id": 4,
-              "artist": "Meat Loaf",
-              "title": "Midnight at the lost and found",
-              "description": "",
-              "coverImage": "/images/Meat Loaf - Midnight at the lost and found.jpg",
-              "year": "1983",
-              "medium": "CD",
-              "tracks": []
-            },
-            {
-              "id": 5,
-              "artist": "Meat Loaf",
-              "title": "Rock’n’roll hero",
-              "description": "Samlingsalbum",
-              "coverImage": "/images/Meat loaf - Rock 'n' roll hero.jpg",
-              "year": "2001",
-              "medium": "CD",
-              "tracks": []
-            }
-          ]
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Dansband",
+            "artists": [
+                {
+                    "id": 0,
+                    "name": "Sven Ingvars",
+                    "description": "Svenskt dansband",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Sven ingvars",
+                            "title": "25 av Sven Ingvars bästa",
+                            "medium": "CD",
+                            "year": "1988",
+                            "description": "",
+                            "coverImage": "/images/Sven Ingvars - 25 av Sven Ingvars bästa.jpg",
+                            "tracks": []
+                        },
+                        {
+                            "id": 1,
+                            "artist": "Sven ingvars",
+                            "title": "På begäran",
+                            "medium": "CD",
+                            "year": "1990",
+                            "description": "Nyinspelade versioner av deras gamla hits",
+                            "coverImage": "/images/Sven Ingvars - På begäran.jpg",
+                            "tracks": []
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Wizex",
+                    "description": "Skånskt dansband",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Wizex",
+                            "title": "Varma vindar",
+                            "medium": "CD",
+                            "year": "1995",
+                            "description": "",
+                            "coverImage": "/images/Wizex - Varma vindar.jpg",
+                            "tracks": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "4",
+            "name": "Klassiskt",
+            "artists": [
+                {
+                    "id": 0,
+                    "name": "Franz Liszt",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Franz Liszt",
+                            "title": "The best of Liszt",
+                            "medium": "CD",
+                            "year": "1989",
+                            "description": "",
+                            "coverImage": "/images/Franz Liszt - The best of Liszt.jpg",
+                            "tracks": []
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "name": "Frederic Chopin",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Frederic Chopin",
+                            "title": "Piano favoriter",
+                            "medium": "CD",
+                            "year": "1995",
+                            "description": "Framfört av Idil Biret",
+                            "coverImage": "/images/Chopin - Pianofavoriter.jpg",
+                            "tracks": []
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "name": "Beethoven",
+                    "description": "",
+                    "records": [
+                        {
+                            "id": 0,
+                            "artist": "Beethoven",
+                            "title": "In rock we trust",
+                            "description": "",
+                            "coverImage": "/images/lp-record-org.jpg",
+                            "year": "",
+                            "medium": "LP",
+                            "tracks": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "name": "Country",
+            "artists": [
+                {
+                    "id": 0,
+                    "name": "Kenny Rogers",
+                    "description": "",
+                    "records": []
+                }
+            ]
         }
-      ]
-    },
-    {
-      "id": "1",
-      "name": "Hårdrock",
-      "artists": [
-        {
-          "id": 0,
-          "name": "AC/DC",
-          "description": "Australienskt hårdrockband med rötterna från Skottland",
-          "records": [
-            {
-              "id": 0,
-              "artist": "AC/DC",
-              "title": "Let there be rock",
-              "medium": "CD",
-              "year": "1977",
-              "description": "AC/DC:s fjärde studioalbum. Bon scott på sång.",
-              "coverImage": "/images/AC-DC - Let there be rock.jpg",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "AC/DC",
-              "title": "If you want blood you've got it",
-              "medium": "LP",
-              "year": "1978",
-              "description": "AC/DC:s första livealbum. Det enda live albumet med Bon scott på sång.",
-              "coverImage": "/images/AC-DC - If you want blood youve got it.jpg",
-              "tracks": []
-            },
-            {
-              "id": 2,
-              "artist": "AC/DC",
-              "title": "If you want blood you've got it",
-              "medium": "CD",
-              "year": "1978",
-              "description": "AC/DC:s första livealbum. Bon scott på sång ",
-              "coverImage": "/images/AC-DC - If you want blood youve got it.jpg",
-              "tracks": []
-            },
-            {
-              "id": 3,
-              "artist": "AC/DC",
-              "title": "Highway to hell",
-              "medium": "CD",
-              "year": "1979",
-              "description": "AC/DC:s sjätte studioalbum. Det sista albumet med Bon scott på sång ",
-              "coverImage": "/images/AC-DC - Highway to hell.jpg",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Highway to hell"
-                },
-                {
-                  "id": 1,
-                  "name": "Girls got rhythm"
-                },
-                {
-                  "id": 2,
-                  "name": "Walk all over you"
-                },
-                {
-                  "id": 3,
-                  "name": "Touch too much"
-                },
-                {
-                  "id": 4,
-                  "name": "Beating around the bush"
-                },
-                {
-                  "id": 5,
-                  "name": "Shot down in flames"
-                },
-                {
-                  "id": 6,
-                  "name": "Get it hot"
-                },
-                {
-                  "id": 7,
-                  "name": "If you want blood you've got it"
-                },
-                {
-                  "id": 8,
-                  "name": "Love hungry man"
-                },
-                {
-                  "id": 9,
-                  "name": "Night prowler"
-                }
-              ]
-            },
-            {
-              "id": 4,
-              "artist": "AC/DC",
-              "title": "Back in black",
-              "medium": "CD",
-              "year": "1980",
-              "description": "AC/DC:s sjunde studioalbum. Det första albumet med Brian Johnson på sång ",
-              "coverImage": "/images/AC-DC - Back in black.jpg",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Hells bells"
-                },
-                {
-                  "id": 1,
-                  "name": "Shoot to thrill"
-                },
-                {
-                  "id": 2,
-                  "name": "What do you do for money honey"
-                },
-                {
-                  "id": 3,
-                  "name": "Given the dog a bone"
-                },
-                {
-                  "id": 4,
-                  "name": "Let me put my love into you"
-                },
-                {
-                  "id": 5,
-                  "name": "Back in black"
-                },
-                {
-                  "id": 6,
-                  "name": "You shook me all night long"
-                },
-                {
-                  "id": 7,
-                  "name": "Have a drink on me"
-                },
-                {
-                  "id": 8,
-                  "name": "Shake a leg"
-                },
-                {
-                  "id": 9,
-                  "name": "Rock and roll ain't noise pollution"
-                }
-              ]
-            },
-            {
-              "id": 5,
-              "artist": "AC/DC",
-              "title": "For those about to rock We salute you",
-              "medium": "LP",
-              "year": "1981",
-              "description": "AC/DC:s åttonde studioalbum. Det andra albumet med Brian Johnson på sång.",
-              "coverImage": "/images/AC-DC - For those about to rock.jpg",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "For those about to rock (We salute you)"
-                },
-                {
-                  "id": 1,
-                  "name": "Put the finger on you"
-                },
-                {
-                  "id": 2,
-                  "name": "Lets get it up"
-                },
-                {
-                  "id": 3,
-                  "name": "Inject the venom"
-                },
-                {
-                  "id": 4,
-                  "name": "Snowballed"
-                },
-                {
-                  "id": 5,
-                  "name": "Evil walks"
-                },
-                {
-                  "id": 6,
-                  "name": "C.O.D."
-                },
-                {
-                  "id": 7,
-                  "name": "Breaking the rules"
-                },
-                {
-                  "id": 8,
-                  "name": "Night of the long knifes"
-                },
-                {
-                  "id": 9,
-                  "name": "Spellbpound"
-                }
-              ]
-            },
-            {
-              "id": 6,
-              "artist": "AC/DC",
-              "title": "For those about to rock We salute you",
-              "medium": "CD",
-              "year": "1981",
-              "description": "AC/DC:s åttonde studioalbum. Det andra albumet med Brian Johnson på sång.",
-              "coverImage": "/images/AC-DC - For those about to rock.jpg",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "For those about to rock (We salute you)"
-                },
-                {
-                  "id": 1,
-                  "name": "Put the finger on you"
-                },
-                {
-                  "id": 2,
-                  "name": "Lets get it up"
-                },
-                {
-                  "id": 3,
-                  "name": "Inject the venom"
-                },
-                {
-                  "id": 4,
-                  "name": "Snowballed"
-                },
-                {
-                  "id": 5,
-                  "name": "Evil walks"
-                },
-                {
-                  "id": 6,
-                  "name": "C.O.D."
-                },
-                {
-                  "id": 7,
-                  "name": "Breaking the rules"
-                },
-                {
-                  "id": 8,
-                  "name": "Night of the long knifes"
-                },
-                {
-                  "id": 9,
-                  "name": "Spellbpound"
-                }
-              ]
-            },
-            {
-              "id": 7,
-              "artist": "AC/DC",
-              "title": "Flick of the switch",
-              "medium": "LP",
-              "year": "1983",
-              "description": "AC/DC:s nionde studioalbum. Brian Johnson på sång.",
-              "coverImage": "/images/AC-DC - Flick of the switch.jpg",
-              "tracks": []
-            },
-            {
-              "id": 8,
-              "artist": "AC/DC",
-              "title": "The razors edge",
-              "medium": "CD",
-              "year": "1990",
-              "description": "AC/DC:s tolfte studioalbum. Brian Johnson på sång. Thunderstruck är med på denna skivan",
-              "coverImage": "/images/AC-DC - The razors edge.jpg",
-              "tracks": []
-            },
-            {
-              "id": 9,
-              "artist": "AC/DC",
-              "title": "Stiff upper lip",
-              "medium": "CD",
-              "year": "2000",
-              "description": "AC/DC:s fjortonde studioalbum. Brian Johnson på sång. ",
-              "coverImage": "/images/AC-DC - Stiff upper lip.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Deep Purple",
-          "description": "Engelskt hårdrockband somm bildades 1968. Mest kända medlemmar är Ian Gillan - sång, Ritchie Blackmore - gitarr, Jon Lord - keyboards, Roger Glover - bas och Ian Paice - trummor. Andra namnkunniga personer som varit med i Deep Purple är David Coverdale - sång, Glenn Hughes - bas, Steve Morse - gitarr och Don Airey - keyboards. Alla utom Jon Lord lever fortfarande.",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Deep Purple",
-              "title": "In rock",
-              "medium": "LP",
-              "year": "1970",
-              "description": "In rock är Deep Purple fjärde studioalbum och det första med Ian Gillan på sång",
-              "coverImage": "/images/Deep Purple - In rock.jpg",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "Deep Purple",
-              "title": "In live concert at the Royal Albert Hall",
-              "medium": "LP",
-              "year": "1970",
-              "description": "Live inpelning tillsammans med Royal Philharmonic Orchestra.",
-              "coverImage": "/images/Deep Purple - In live concert at the Royal Albert Hall.jpg",
-              "tracks": []
-            },
-            {
-              "id": 2,
-              "artist": "Deep Purple",
-              "title": "Machine head",
-              "medium": "LP",
-              "year": "1972",
-              "description": "Smoke on the water och Highway star är med på denna skivan. Ian Gillan på sång.",
-              "coverImage": "/images/Deep Purple - Machine head.jpg",
-              "tracks": []
-            },
-            {
-              "id": 3,
-              "artist": "Deep Purple",
-              "title": "Burn",
-              "medium": "LP",
-              "year": "1974",
-              "description": "Första studioalbumet med David Coverdale på sång.",
-              "coverImage": "/images/Deep Purple - Burn.jpg",
-              "tracks": []
-            },
-            {
-              "id": 4,
-              "artist": "Deep Purple",
-              "title": "Stormbringer",
-              "medium": "CD",
-              "year": "1974",
-              "description": "Andra studioalbumet med David Coverdale på sång.",
-              "coverImage": "/images/Deep Purple - Stormbringer.jpg",
-              "tracks": []
-            },
-            {
-              "id": 5,
-              "artist": "Deep Purple",
-              "title": "Made in Europe",
-              "medium": "CD",
-              "year": "1976",
-              "description": "Live album inpspelat i Europa. David Coverdale på sång.",
-              "coverImage": "/images/Deep Purple - Made in Europe.jpg",
-              "tracks": []
-            },
-            {
-              "id": 6,
-              "artist": "Deep Purple",
-              "title": "The best of",
-              "medium": "CD",
-              "year": "1987",
-              "description": "Samlingsalbum.",
-              "coverImage": "/images/Deep Purple - The best of.jpg",
-              "tracks": []
-            },
-            {
-              "id": 7,
-              "artist": "Deep Purple",
-              "title": "Nobody's perfect",
-              "medium": "CD",
-              "year": "1988",
-              "description": "Dubbelt live album med Ian Gillan på sång.",
-              "coverImage": "/images/Deep Purple - Nobodys perfect.jpg",
-              "tracks": []
-            },
-            {
-              "id": 8,
-              "artist": "Deep Purple",
-              "title": "The battle rages on",
-              "medium": "CD",
-              "year": "1993",
-              "description": "Studioalbum med Ian Gillan på sång. Sista skivan med Ritchie Blackmore på gitarr",
-              "coverImage": "/images/Deep Purple - The battle rages on.jpg",
-              "tracks": []
-            },
-            {
-              "id": 9,
-              "artist": "Deep Purple",
-              "title": "Rock giants",
-              "medium": "CD",
-              "year": "1993",
-              "description": "Samlingsalbum.",
-              "coverImage": "/images/Deep Purple - Rock giants.jpg",
-              "tracks": []
-            },
-            {
-              "id": 10,
-              "artist": "Deep Purple",
-              "title": "Purpendicular",
-              "medium": "CD",
-              "year": "1996",
-              "description": "Studioalbum med Ian Gillan på sång. Första skivan med Steve Morse på gitarr",
-              "coverImage": "/images/Deep Purple - Purpendicular.jpg",
-              "tracks": []
-            },
-            {
-              "id": 11,
-              "artist": "Deep Purple",
-              "title": "Abandon",
-              "medium": "CD",
-              "year": "1998",
-              "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
-              "coverImage": "/images/Deep Purple - Abandon.jpg",
-              "tracks": []
-            },
-            {
-              "id": 12,
-              "artist": "Deep Purple",
-              "title": "Bananas",
-              "medium": "CD",
-              "year": "2003",
-              "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
-              "coverImage": "/images/Deep Purple - Bananas.jpg",
-              "tracks": []
-            },
-            {
-              "id": 13,
-              "artist": "Deep Purple",
-              "title": "Infinite",
-              "medium": "CD",
-              "year": "2017",
-              "description": "Studioalbum med Ian Gillan på sång och Steve Morse på gitarr",
-              "coverImage": "/images/Deep Purple - Infinite.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Y&T",
-          "description": "Amerikanskt hårdrocksband",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Y&T",
-              "title": "Down for the count",
-              "description": "",
-              "coverImage": "/images/Y&T - Down for the count.jpg",
-              "year": "1985",
-              "medium": "LP",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "In the name of rock"
-                },
-                {
-                  "id": 1,
-                  "name": "All american boy"
-                },
-                {
-                  "id": 2,
-                  "name": "Anytime at all"
-                },
-                {
-                  "id": 3,
-                  "name": "Anything for money"
-                },
-                {
-                  "id": 4,
-                  "name": "Face like an angel"
-                },
-                {
-                  "id": 5,
-                  "name": "Summertime girls"
-                },
-                {
-                  "id": 6,
-                  "name": "Looks like troble"
-                },
-                {
-                  "id": 7,
-                  "name": "Your Mama Don't Dance"
-                },
-                {
-                  "id": 8,
-                  "name": "Don't tell me what to wear"
-                },
-                {
-                  "id": 9,
-                  "name": "Hands of time"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Dio ",
-          "description": "Ronnie James Dios soloprojekt",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Dio ",
-              "title": "The collection",
-              "description": "",
-              "coverImage": "/images/Dio - The collection.webp",
-              "year": "2003",
-              "medium": "CD",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Holy diver"
-                },
-                {
-                  "id": 1,
-                  "name": "Don't talk strangers"
-                },
-                {
-                  "id": 2,
-                  "name": "Rainbow in the dark"
-                },
-                {
-                  "id": 3,
-                  "name": "Stand up and shout (Live)"
-                },
-                {
-                  "id": 4,
-                  "name": "Straight through the heart (live)"
-                },
-                {
-                  "id": 5,
-                  "name": "We rock"
-                },
-                {
-                  "id": 6,
-                  "name": "The last in line (live)"
-                },
-                {
-                  "id": 7,
-                  "name": "Mystery"
-                },
-                {
-                  "id": 8,
-                  "name": "I speed at night"
-                },
-                {
-                  "id": 9,
-                  "name": "Rock 'N' Roll Children"
-                },
-                {
-                  "id": 10,
-                  "name": "Hungry for heaven"
-                },
-                {
-                  "id": 11,
-                  "name": "King of rock and roll"
-                },
-                {
-                  "id": 12,
-                  "name": "Sacred heart (live)"
-                },
-                {
-                  "id": 13,
-                  "name": "Dream evil"
-                },
-                {
-                  "id": 14,
-                  "name": "I could have been a dreamer"
-                },
-                {
-                  "id": 15,
-                  "name": "Wild one"
-                },
-                {
-                  "id": 16,
-                  "name": "Jesus, Mary & The holy ghost"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Rainbow",
-          "description": "Ritchie Blackmores soloprojekt",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Rainbow",
-              "title": "Difficult to cure",
-              "description": "Första albumet med Joe Lynn Turner på sång",
-              "coverImage": "/images/Rainbow - Difficult to cure.jpg",
-              "year": "1981",
-              "medium": "LP",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "I surrender"
-                },
-                {
-                  "id": 1,
-                  "name": "Spotlight kid"
-                },
-                {
-                  "id": 2,
-                  "name": "No release"
-                },
-                {
-                  "id": 3,
-                  "name": "Magic"
-                },
-                {
-                  "id": 4,
-                  "name": "Vielleicht das nachster zeit = Maybe Next Time"
-                },
-                {
-                  "id": 5,
-                  "name": "Can't happen here"
-                },
-                {
-                  "id": 6,
-                  "name": "Freedom fighter"
-                },
-                {
-                  "id": 7,
-                  "name": "Midtown Tunnel Vision"
-                },
-                {
-                  "id": 8,
-                  "name": "Difficult to cure (Beethoven's ninth)"
-                }
-              ]
-            },
-            {
-              "id": 1,
-              "artist": "Rainbow",
-              "title": "Can't happen here",
-              "description": "",
-              "coverImage": "/images/Rainbow - Can't happen here.jpg",
-              "year": "1981",
-              "medium": "Vinylsingel",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Can't happen here"
-                },
-                {
-                  "id": 1,
-                  "name": "Jealous lover"
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "artist": "Rainbow",
-              "title": "Down for the count",
-              "description": "Första och enda albumet med Graham Bonnet på sång",
-              "coverImage": "/images/Rainbow - Down to earth.jpg",
-              "year": "1979",
-              "medium": "LP",
-              "tracks": []
-            },
-            {
-              "id": 3,
-              "artist": "Rainbow",
-              "title": "Bent out of shape",
-              "description": "",
-              "coverImage": "/images/Rainbow - Bent out of shape.jpg",
-              "year": "1983",
-              "medium": "LP",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 5,
-          "name": "Iron Maiden",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Iron Maiden",
-              "title": "Powerslave",
-              "description": "Brittiskt heavymetal band",
-              "coverImage": "/images/Iron Maiden - Powerslave.jpg",
-              "year": "1984",
-              "medium": "LP",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Aces high"
-                },
-                {
-                  "id": 1,
-                  "name": "2 minutes to midnight"
-                },
-                {
-                  "id": 2,
-                  "name": "Losfer Words (Big 'Orra)"
-                },
-                {
-                  "id": 3,
-                  "name": "Flash of the blade"
-                },
-                {
-                  "id": 4,
-                  "name": "The duellists"
-                },
-                {
-                  "id": 5,
-                  "name": "Back In The Village"
-                },
-                {
-                  "id": 6,
-                  "name": "Powerslave"
-                },
-                {
-                  "id": 7,
-                  "name": "Rime of the ancient mariner"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 6,
-          "name": "Gary Moore",
-          "description": "Nordirländsk hårdrockgitarist och sångare",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Gary Moore",
-              "title": "Still got the blues",
-              "description": "",
-              "coverImage": "/images/Gary Moore - Still got the blues.jpg",
-              "year": "1990",
-              "medium": "LP",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 7,
-          "name": "Whitesnake",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Whitesnake",
-              "title": "1987",
-              "description": "",
-              "coverImage": "/images/Whitesnake - 1987.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Still of the night"
-                },
-                {
-                  "id": 1,
-                  "name": "Bad boys"
-                },
-                {
-                  "id": 2,
-                  "name": "Give me all your love"
-                },
-                {
-                  "id": 3,
-                  "name": "Looking for love"
-                },
-                {
-                  "id": 4,
-                  "name": "Crying in the rain"
-                },
-                {
-                  "id": 5,
-                  "name": "Is this love"
-                },
-                {
-                  "id": 6,
-                  "name": "Straight For The Heart"
-                },
-                {
-                  "id": 7,
-                  "name": "Don't Turn Away"
-                },
-                {
-                  "id": 8,
-                  "name": "Children Of The Night"
-                },
-                {
-                  "id": 9,
-                  "name": "Here I go again 87"
-                },
-                {
-                  "id": 10,
-                  "name": "You're gonna break my heart again"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": 8,
-          "name": "Göran",
-          "description": "",
-          "records": []
-        }
-      ]
-    },
-    {
-      "id": "2",
-      "name": "Svensk pop/rock",
-      "artists": [
-        {
-          "id": 0,
-          "name": "Stefan Andersson",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Stefan Andersson",
-              "title": "Emperors day",
-              "medium": "CD",
-              "year": "1992",
-              "description": "",
-              "coverImage": "/images/Stefan Andersson - Emperors day.jpg",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "Stefan Andersson",
-              "title": "Walk right on",
-              "medium": "CD",
-              "year": "1993",
-              "description": "",
-              "coverImage": "/images/Stefan Andersson - Walk right on.jpg",
-              "tracks": []
-            },
-            {
-              "id": 2,
-              "artist": "Stefan Andersson",
-              "title": "Under a low-ceilinged sky",
-              "medium": "CD",
-              "year": "1996",
-              "description": "",
-              "coverImage": "/images/Stefan Andersson - Under a low-ceilinged sky.jpg",
-              "tracks": []
-            },
-            {
-              "id": 3,
-              "artist": "Stefan Andersson",
-              "title": "På svenska",
-              "medium": "CD",
-              "year": "1997",
-              "description": "",
-              "coverImage": "/images/Stefan Andersson - På svenska.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Gyllene Tider",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Gyllene Tider",
-              "title": "Dags att tänka på refrängen",
-              "medium": "CD",
-              "year": "2013",
-              "description": "",
-              "coverImage": "/images/Gyllene Tider - Dags att tänka på refrängen.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Wilmer X",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Wilmer X",
-              "title": "Mambo feber",
-              "medium": "CD",
-              "year": "1991",
-              "description": "Dubbel-cd",
-              "coverImage": "/images/Wilmer X - Mambo feber.jpg",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "Wilmer X",
-              "title": "Pontiac till himlen",
-              "medium": "CD",
-              "year": "1993",
-              "description": "",
-              "coverImage": "/images/Wilmer X - Pontiac till himlen.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 3,
-          "name": "Magnus Uggla",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Magnus Uggla",
-              "title": "Klassika mästerverk",
-              "description": "",
-              "coverImage": "/images/Magnus Uggla - Klassiska masterverk.jpg",
-              "year": "2002",
-              "medium": "Dubbel-CD",
-              "tracks": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "3",
-      "name": "Dansband",
-      "artists": [
-        {
-          "id": 0,
-          "name": "Sven Ingvars",
-          "description": "Svenskt dansband",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Sven ingvars",
-              "title": "25 av Sven Ingvars bästa",
-              "medium": "CD",
-              "year": "1988",
-              "description": "",
-              "coverImage": "/images/Sven Ingvars - 25 av Sven Ingvars bästa.jpg",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "Sven ingvars",
-              "title": "På begäran",
-              "medium": "CD",
-              "year": "1990",
-              "description": "Nyinspelade versioner av deras gamla hits",
-              "coverImage": "/images/Sven Ingvars - På begäran.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Wizex",
-          "description": "Skånskt dansband",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Wizex",
-              "title": "Varma vindar",
-              "medium": "CD",
-              "year": "1995",
-              "description": "",
-              "coverImage": "/images/Wizex - Varma vindar.jpg",
-              "tracks": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "4",
-      "name": "Klassiskt",
-      "artists": [
-        {
-          "id": 0,
-          "name": "Franz Liszt",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Franz Liszt",
-              "title": "The best of Liszt",
-              "medium": "CD",
-              "year": "1989",
-              "description": "",
-              "coverImage": "/images/Franz Liszt - The best of Liszt.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Frederic Chopin",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Frederic Chopin",
-              "title": "Piano favoriter",
-              "medium": "CD",
-              "year": "1995",
-              "description": "Framfört av Idil Biret",
-              "coverImage": "/images/Chopin - Pianofavoriter.jpg",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 2,
-          "name": "Beethoven",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Beethoven",
-              "title": "In rock we trust",
-              "description": "",
-              "coverImage": "/images/lp-record-org.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "5",
-      "name": "Country",
-      "artists": [
-        {
-          "id": 0,
-          "name": "Kenny Rogers",
-          "description": "",
-          "records": []
-        },
-        {
-          "id": 1,
-          "name": "Dolly Parton",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Dolly Parton",
-              "title": "Down for the count",
-              "description": "",
-              "coverImage": "/images/Magnus Uggla - Klassiska masterverk.jpg",
-              "year": "",
-              "medium": "CD",
-              "tracks": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "6",
-      "name": "Hiphop",
-      "artists": [
-        {
-          "id": 0,
-          "name": "Eminem",
-          "description": "Ameriskansk vit rappare",
-          "records": []
-        }
-      ]
-    },
-    {
-      "id": "7",
-      "name": "Knullpop",
-      "artists": [
-        {
-          "id": 0,
-          "name": "Y&T",
-          "description": "",
-          "records": []
-        }
-      ]
-    }
-  ]
+    ]
 }
