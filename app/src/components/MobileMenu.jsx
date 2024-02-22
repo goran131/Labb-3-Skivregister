@@ -20,7 +20,7 @@ function MobileMenu() {
    return (
       <>
          <img src="/mobile-icon.webp" onClick={showMobileMenu} />
-         <ul ref={ mobileMenuLinks } className="mobile-nav-links notVisible">
+         <ul ref={ mobileMenuLinks } className="mobile-menu-links notVisible">
             <li>
                <Link className="link" to="./" onClick={closeMobileMenu}>Start</Link>
             </li>

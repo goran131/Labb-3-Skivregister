@@ -32,18 +32,13 @@
 .desktop-menu {
    display: inline;
    float: left;
+   padding-bottom: 20px;
+   margin: 26px 0 0 30px;
 }
 
 .mobile-menu {
    display: none;
 }
-
-.desktop-menu {
-   float: left;
-   padding-bottom: 20px;
-   margin: 26px 0 0 30px;
-}
-
 
 .logotype {
    float: left;
@@ -174,14 +169,6 @@ a.link-color {
    }
 }
 
-@media screen and (max-width: 710px) {
-   .popup-content {
-      margin: auto 15px !important;
-      width: 100% !important;
-   }
-}
-
-
 @media screen and (max-width: 835px) {
    .header {
       height: 70px;
@@ -212,6 +199,14 @@ a.link-color {
       padding: 4px 0;
    }
 }
+
+@media screen and (max-width: 710px) {
+   .popup-content {
+      margin: auto 15px !important;
+      width: 100% !important;
+   }
+}
+
 
 @media screen and (max-width: 465px) {
    #root {
