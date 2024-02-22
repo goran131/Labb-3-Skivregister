@@ -29,16 +29,16 @@
    border-bottom: 1px solid #ccc;
 }
 
-.desktop-nav {
+.desktop-menu {
    display: inline;
    float: left;
 }
 
-.mobile-nav {
+.mobile-menu {
    display: none;
 }
 
-.desktop-nav {
+.desktop-menu {
    float: left;
    padding-bottom: 20px;
    margin: 26px 0 0 30px;
@@ -187,18 +187,18 @@ a.link-color {
       height: 70px;
    }
 
-   .desktop-nav {
+   .desktop-menu {
       display: none;
    }
 
-   .mobile-nav {
+   .mobile-menu {
       display: inline;
       float: right;
       padding-top: 20px;
       width: 33px;
    }
 
-   .mobile-nav-links {
+   .mobile-menu-links {
       position: relative;
       left: -142px;
       top: 4px;
@@ -207,7 +207,7 @@ a.link-color {
       background-color: #eee;
    }
 
-   .mobile-nav-links li {
+   .mobile-menu-links li {
       list-style-type: none;
       padding: 4px 0;
    }
@@ -236,11 +236,11 @@ a.link-color {
       width: 275px;
    }
 
-   .mobile-nav {
+   .mobile-menu {
       padding-top: 10px;
    }
 
-   .mobile-nav-links {
+   .mobile-menu-links {
       top: 8px;
    }
 }

@@ -1,0 +1,38 @@
+import { React, useRef } from 'react'
+import { BrowserRouter, Link } from 'react-router-dom'
+
+function MobileMenu() {
+   const mobileMenuLinks = useRef(null)
+
+   const showMobileMenu = () => {
+      if (mobileMenuLinks.current.style.display != 'block') {
+         mobileMenuLinks.current.style.display = 'block';
+      }
+      else {
+         mobileMenuLinks.current.style.display = 'none';
+      }
+   }
+
+   const closeMobileMenu = () => {
+      mobileMenuLinks.current.style.display = 'none';
+   }
+
+   return (
+      <>
+         <img src="/mobile-icon.webp" onClick={showMobileMenu} />
+         <ul ref={ mobileMenuLinks } className="mobile-nav-links notVisible">
+            <li>
+               <Link className="link" to="./" onClick={closeMobileMenu}>Start</Link>
+            </li>
+            <li>
+               <Link className="link" to="/pages/AddArtistPage" onClick={closeMobileMenu}>Lägg till artister</Link>
+            </li>
+            <li>
+               <Link className="link" to="/pages/AddCategoriesPage" onClick={closeMobileMenu}>Skapa kategorier</Link>
+            </li>
+         </ul>
+      </>
+   )
+}
+
+export default MobileMenu
