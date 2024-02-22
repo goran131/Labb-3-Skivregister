@@ -10,9 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    <React.StrictMode>
       <BrowserRouter>
          <div className="header">
-            <Link className="link" to="./">
-               <img src="/logotype.webp" className="logotype" />
-            </Link>
+            <Link className="link" to="./"><img src="/logotype.webp" className="logotype" /></Link>
 
             <div className="desktop-menu">
                <nav>
