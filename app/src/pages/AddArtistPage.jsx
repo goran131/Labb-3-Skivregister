@@ -332,17 +332,14 @@ function AddArtistPage() {
                     <div>
                         <label htmlFor="recordTitle">Titel:</label>
                         <input
-                            id="recordTitle"
-                            ref={recordTitle}
-                            type="text"
-                            name="recordTitle"
-                            className="textInput"
+                           id="recordTitle"
+                           ref={recordTitle}
+                           type="text"
+                           name="recordTitle"
+                           className="textInput"
                         ></input>
-                        <div
-                            ref={errorRecordTitle}
-                            className="notVisible errorText"
-                        >
-                            Ange skivans titel!
+                        <div ref={errorRecordTitle} className="notVisible errorText">
+                           Ange skivans titel!
                         </div>
                     </div>
                     <div>
@@ -391,11 +388,8 @@ function AddArtistPage() {
                             ref={coverImageFile}
                             name="coverImageFile"
                         ></input>
-                        <div
-                            ref={errorCoverImage}
-                            className="notVisible errorText"
-                        >
-                            Välj en omslagsbild!
+                        <div ref={errorCoverImage} className="notVisible errorText">
+                           Välj en omslagsbild!
                         </div>
                     </div>
 

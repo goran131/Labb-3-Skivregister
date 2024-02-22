@@ -17,41 +17,41 @@ export const jsonServerUrl = 'https://api-json-server-xi.vercel.app'
 export const expressServerUrl = 'https://api-express-server.vercel.app/upload'
 
 function App() {
-    const [categories, setCategories] = useState([])
+   const [categories, setCategories] = useState([])
 
-    useEffect(() => {
-        fetch(jsonServerUrl + '/categories', { method: 'GET' })
-            .then((response) => response.json())
-            .then((categories) => setCategories(categories))
-    }, [])
+   useEffect(() => {
+      fetch(jsonServerUrl + '/categories', { method: 'GET' })
+         .then((response) => response.json())
+         .then((categories) => setCategories(categories))
+   }, [])
 
-    return (
-        <>
-            <CategoriesContext.Provider value={{ categories, setCategories }}>
-                <Routes>
-                    <Route exact path="/" element={<Home />} />
-                    <Route
-                        path="/pages/CategoryPage"
-                        element={<CategoryPage />}
-                    />
-                    <Route
-                        path="/pages/AddcategoriesPage"
-                        element={<AddCategoriesPage />}
-                    />
-                    <Route path="/pages/ArtistPage" element={<ArtistPage />} />
-                    <Route path="/pages/RecordPage" element={<RecordPage />} />
-                    <Route
-                        path="/pages/AddArtistPage/"
-                        element={<AddArtistPage />}
-                    />
-                    <Route
-                        path="/pages/AddRecordsPage"
-                        element={<AddRecordsPage />}
-                    />
-                </Routes>
-            </CategoriesContext.Provider>
-        </>
-    )
+   return (
+      <>
+         <CategoriesContext.Provider value={{ categories, setCategories }}>
+            <Routes>
+               <Route exact path="/" element={<Home />} />
+               <Route
+                  path="/pages/CategoryPage"
+                  element={<CategoryPage />}
+               />
+               <Route
+                  path="/pages/AddcategoriesPage"
+                  element={<AddCategoriesPage />}
+               />
+               <Route path="/pages/ArtistPage" element={<ArtistPage />} />
+               <Route path="/pages/RecordPage" element={<RecordPage />} />
+               <Route
+                  path="/pages/AddArtistPage/"
+                  element={<AddArtistPage />}
+               />
+               <Route
+                  path="/pages/AddRecordsPage"
+                  element={<AddRecordsPage />}
+               />
+            </Routes>
+         </CategoriesContext.Provider>
+      </>
+   )
 }
 
 export default App

@@ -1,168 +1,246 @@
 #root {
-    width: 700px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: left;
+   max-width: 900px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 1.2rem 2rem;
+   text-align: left;
 }
 
 @keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+   from {
+      transform: rotate(0deg);
+   }
+   to {
+      transform: rotate(360deg);
+   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+   a:nth-of-type(2) .logo {
+      animation: logo-spin infinite 20s linear;
+   }
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 6rem;
-    min-height: 100vh;
-    max-width: 1200px;
+.header {
+   float: left;
+   width: 100%;
+   margin-bottom: 30px;
+   padding-bottom: 15px;
+   border-bottom: 1px solid #ccc;
 }
 
-nav {
-    padding-bottom: 20px;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #ccc;
+.desktop-nav {
+   display: inline;
+   float: left;
 }
 
+.mobile-nav {
+   display: none;
+}
+
+.desktop-nav {
+   float: left;
+   padding-bottom: 20px;
+   margin: 26px 0 0 30px;
+}
+
+
+.logotype {
+   float: left;
+}
+
+.main-page {
+   clear: both;
+}
 .link {
-    margin: 20px 15px;
-    color: black;
-    cursor: pointer;
+   margin: 20px 15px;
+   color: black;
+   cursor: pointer;
 }
 
 body {
-    place-items: normal !important;
+   place-items: normal !important;
 }
 
 li {
-    text-align: left;
+   text-align: left;
 }
 
 button {
-    background: #ddd !important;
+   background: #ddd !important;
 }
 
-h1.header {
-    color: black !important;
-    cursor: pointer;
-    position: relative;
+h2 {
+   font-size: 2em;
+}
+
+h3 {
+   font-size: 1.4em;
 }
 
 a.link-color {
-    color: black;
+   color: black;
 }
 
 .notVisible {
-    display: none;
+   display: none;
 }
 
 .visible {
-    display: block !important;
+   display: block !important;
 }
 
 .selector-div {
-    padding: 0 0 20px;
+   padding: 0 0 20px;
 }
 
 .selector-div select {
-    padding: 8px;
-    border-radius: 4px;
+   padding: 8px;
+   border-radius: 4px;
 }
 
 .textInput {
-    padding: 6px;
-    margin: 5px 0 5px 10px;
-    border-radius: 4px;
-    border: #888 solid 1px;
+   padding: 6px;
+   margin: 5px 0 5px 10px;
+   border-radius: 4px;
+   border: #888 solid 1px;
 }
 
 .tracks {
-    width: 240px;
+   width: 240px;
 }
 
 .categories,
 .artists,
 .records {
-    padding: 5px 0;
+   padding: 5px 0;
 }
 
 .backlink {
-    margin-top: 30px;
-    clear: both;
-    float: left;
-    text-align: center;
-    width: 100%;
-    display: block;
+   margin-top: 30px;
+   clear: both;
+   float: left;
+   text-align: center;
+   width: 100%;
+   display: block;
 }
 
 .imagesDiv {
-    margin: 20px 0;
+   margin: 20px 0;
 }
 
 .remove-icon {
-    position: relative;
-    left: 8px;
-    top: 5px;
-    width: 23px;
-    cursor: pointer;
+   position: relative;
+   left: 8px;
+   top: 5px;
+   width: 23px;
+   cursor: pointer;
 }
 
 .outer-message-box {
-    height: 40px;
+   height: 40px;
 }
 .messageBox {
-    margin-top: 30px;
-    color: white;
-    background-color: #61c961;
-    padding: 8px 20px;
-    border-radius: 8px;
+   margin-top: 30px;
+   color: white;
+   background-color: #61c961;
+   padding: 8px 20px;
+   border-radius: 8px;
 }
 
 .errorText {
-    color: red;
-    margin-bottom: 15px;
+   color: red;
+   margin-bottom: 15px;
 }
 
 .popup-content {
-    padding-bottom: 0 !important;
-    max-width: 650px;
+   padding-bottom: 0 !important;
+   max-width: 650px;
 }
 
 @media screen and (max-width: 1300px) {
-    .popup-content {
-        width: 60% !important;
-    }
+   .popup-content {
+      width: 60% !important;
+   }
 }
 
 @media screen and (max-width: 900px) {
-    .popup-content {
-        width: 75% !important;
-    }
+   .popup-content {
+      width: 75% !important;
+   }
+
+   #root {
+      margin: 0;
+   }
 }
 
 @media screen and (max-width: 710px) {
-    .popup-content {
-        margin: auto 15px !important;
-        width: 100% !important;
-    }
+   .popup-content {
+      margin: auto 15px !important;
+      width: 100% !important;
+   }
 }
 
-@media screen and (max-width: 750px) {
-    #root {
-        width: 100%;
-        max-width: 700px;
-        margin: 0 25px 0 0;
-    }
+
+@media screen and (max-width: 835px) {
+   .header {
+      height: 70px;
+   }
+
+   .desktop-nav {
+      display: none;
+   }
+
+   .mobile-nav {
+      display: inline;
+      float: right;
+      padding-top: 20px;
+      width: 33px;
+   }
+
+   .mobile-nav-links {
+      position: relative;
+      left: -142px;
+      top: 4px;
+      width: 175px;
+      padding: 6px 0;
+      background-color: #eee;
+   }
+
+   .mobile-nav-links li {
+      list-style-type: none;
+      padding: 4px 0;
+   }
+}
+
+@media screen and (max-width: 465px) {
+   #root {
+      padding: 1.2rem;
+   }
+
+   .header {
+      height: 60px;
+   }
+
+   .logotype {
+      width: 300px;
+   }
+}
+
+@media screen and (max-width: 380px) {
+   .header {
+      height: 53px;
+   }
+
+   .logotype {
+      width: 275px;
+   }
+
+   .mobile-nav {
+      padding-top: 10px;
+   }
+
+   .mobile-nav-links {
+      top: 8px;
+   }
 }
