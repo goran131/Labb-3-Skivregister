@@ -246,9 +246,10 @@ function AddRecordsPage() {
             <div ref={errorRecord} className="notVisible errorText">
                Det finns fel i formuläret!
             </div>
-
-            <div ref={messageSavedRecord} className="notVisible messageBox">
-               Skivan är sparad!
+            <div className="outer-messageBox">
+               <div ref={messageSavedRecord} className="notVisible messageBox">
+                  Skivan är sparad!
+               </div>
             </div>
          </form>
          <Link to="/pages/ArtistPage/" state={[artist.id, category.id]} className="backlink">
