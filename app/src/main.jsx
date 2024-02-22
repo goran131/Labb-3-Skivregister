@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Link } from 'react-router-dom'
 import MobileMenu from './components/MobileMenu.jsx'
 import DesktopMenu from './components/DesktopMenu.jsx'
 
@@ -10,7 +10,10 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    <React.StrictMode>
       <BrowserRouter>
          <div className="header">
-            <img src="/logotype.webp" className="logotype" />
+            <Link className="link" to="./">
+               <img src="/logotype.webp" className="logotype" />
+            </Link>
+
             <div className="desktop-menu">
                <nav>
                   <DesktopMenu />
