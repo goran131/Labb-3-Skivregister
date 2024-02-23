@@ -62,7 +62,8 @@ li {
 }
 
 button {
-   background: #ddd !important;
+   background: #ddd !important;+
+   color: black;
 }
 
 h2 {
