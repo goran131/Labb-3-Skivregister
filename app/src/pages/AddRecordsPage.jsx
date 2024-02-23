@@ -7,6 +7,15 @@ function AddRecordsPage() {
    const contextValue = useContext(CategoriesContext)
    let categories = contextValue.categories
 
+   const localCategories = window.localStorage.getItem('recordCategories');
+
+   if (categories.length == 0 && localCategories !== null ) {
+      categories = JSON.parse(localCategories);
+   }
+   else if (categories.length > 0) {
+      window.localStorage.setItem('recordCategories', JSON.stringify(categories));
+   }
+
    const location = useLocation()
    const [artist, categoryID] = location.state
 
@@ -65,8 +74,8 @@ function AddRecordsPage() {
 
       for (let i = 0; i < 20; i++) {
          if (tracks[i].name == '') {
-               lastTrackID = i - 1
-               break
+            lastTrackID = i - 1
+            break
          }
       }
 
@@ -105,8 +114,8 @@ function AddRecordsPage() {
       ).then((response) => {
          if (response.ok) {
             contextValue.setCategories(categories)
+            window.localStorage.setItem('recordCategories', JSON.stringify(categories));
             showMessage(messageSavedRecord)
-            resetRecordForm()
          }
          else {
             console.error('Något gick fel vid spara skiva')
@@ -120,8 +129,8 @@ function AddRecordsPage() {
 
       try {
          const result = await fetch(expressServerUrl, {
-               method: 'POST',
-               body: formData
+            method: 'POST',
+            body: formData
          })
 
          await result.json()
@@ -133,8 +142,9 @@ function AddRecordsPage() {
    const showMessage = (messageBox) => {
       messageBox.current.style.display = 'inline-block'
       setTimeout(() => {
-          messageBox.current.style.display = 'none'
-      }, 5000)
+         messageBox.current.style.display = 'none'
+         window.location.reload()
+      }, 3000)
   }
 
    // Returnerar true om det inte finns några fel
@@ -142,34 +152,23 @@ function AddRecordsPage() {
       let noErrors = true
 
       if (recordTitle.current.value == '') {
-          errorRecordTitle.current.style.display = 'block'
-          noErrors = false
+         errorRecordTitle.current.style.display = 'block'
+         noErrors = false
       }
 
       if (coverImageFile.current.value == '') {
-          errorCoverImage.current.style.display = 'block'
-          noErrors = false
+         errorCoverImage.current.style.display = 'block'
+         noErrors = false
       }
 
       if (noErrors == false) {
-          errorRecord.current.style.display = 'inline'
-          errorRecord.current.style.margin = '0 0 0 30px'
+         errorRecord.current.style.display = 'inline'
+         errorRecord.current.style.margin = '0 0 0 30px'
       }
 
       return noErrors
    }
 
-   const resetRecordForm = () => {
-      recordTitle.current.value = ''
-      recordDescription.current.value = ''
-      recordYear.current.value = ''
-      mediumSelector.current.selectValue = 'LP'
-      coverImageFile.current.value = ''
-
-      errorRecordTitle.current.style.display = 'none'
-      errorCoverImage.current.style.display = 'none'
-      errorRecord.current.style.display = 'none'
-   }
 
    return (
       <>
@@ -236,7 +235,7 @@ function AddRecordsPage() {
                </div>
             </div>
 
-            <AddTracks />
+            <AddTracks reference="resetTracks"/>
 
             <br />
             <br />

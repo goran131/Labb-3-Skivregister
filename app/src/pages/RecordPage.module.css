@@ -44,15 +44,12 @@
     cursor: pointer;
     position: absolute;
     display: block;
-    padding: 4px 8px 8px;
-    line-height: 20px;
-    right: -14px;
-    top: -14px;
-    font-size: 26px;
-    background: #ffffff;
-    border-radius: 18px;
-    border: 1px solid #cfcece;
+    width: 60px;
+    right: -26px;
+    top: -26px;
 }
+
+
 
 @media screen and (max-width: 760px) {
     .right {

@@ -244,6 +244,12 @@
               "tracks": []
             }
           ]
+        },
+        {
+          "id": 2,
+          "name": "Y&T",
+          "description": "",
+          "records": []
         }
       ]
     },
@@ -722,6 +728,29 @@
                 {
                   "id": 9,
                   "name": "Hands of time"
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "artist": "Y&T",
+              "title": "In rock we trust",
+              "description": "",
+              "coverImage": "/images/Y&T - In rock we trust.jpg",
+              "year": "1984",
+              "medium": "LP",
+              "tracks": [
+                {
+                  "id": 0,
+                  "name": "ddd"
+                },
+                {
+                  "id": 1,
+                  "name": "dd"
+                },
+                {
+                  "id": 2,
+                  "name": "Don't tell me what to wear"
                 }
               ]
             }
@@ -1213,6 +1242,94 @@
                   "name": "Don't tell me what to wear"
                 }
               ]
+            },
+            {
+              "id": 1,
+              "artist": "Y&T",
+              "title": "Run for cover",
+              "description": "",
+              "coverImage": "/images/Meat loaf - Bad attitude.jpg",
+              "year": "1985",
+              "medium": "LP",
+              "tracks": [
+                {
+                  "id": 0,
+                  "name": "Run for cover"
+                },
+                {
+                  "id": 1,
+                  "name": "Empty rooms"
+                }
+              ]
+            },
+            {
+              "id": 2,
+              "artist": "Y&T",
+              "title": "In rock we trust",
+              "description": "",
+              "coverImage": "/images/Y&T - In rock we trust.jpg",
+              "year": "1984",
+              "medium": "CD",
+              "tracks": [
+                {
+                  "id": 0,
+                  "name": "ffff"
+                },
+                {
+                  "id": 1,
+                  "name": "ddd"
+                },
+                {
+                  "id": 2,
+                  "name": "dddd"
+                }
+              ]
+            },
+            {
+              "id": 3,
+              "artist": "Y&T",
+              "title": "Holy diver",
+              "description": "",
+              "coverImage": "/images/Dio - Holy diver.jpg",
+              "year": "1983",
+              "medium": "CD",
+              "tracks": [
+                {
+                  "id": 0,
+                  "name": "Holy diver"
+                },
+                {
+                  "id": 1,
+                  "name": "Rock 'n' roll children"
+                },
+                {
+                  "id": 2,
+                  "name": "Straight throw the heart"
+                }
+              ]
+            },
+            {
+              "id": 4,
+              "artist": "Y&T",
+              "title": "Best of Johnny Cash",
+              "description": "",
+              "coverImage": "/images/Meat Loaf - Bat out of hell II.jpg",
+              "year": "",
+              "medium": "CD",
+              "tracks": [
+                {
+                  "id": 0,
+                  "name": "dd"
+                },
+                {
+                  "id": 1,
+                  "name": "ddd"
+                },
+                {
+                  "id": 2,
+                  "name": "www"
+                }
+              ]
             }
           ]
         }
@@ -1265,6 +1382,18 @@
               "tracks": []
             }
           ]
+        },
+        {
+          "id": 2,
+          "name": "Y&T",
+          "description": "Amerikanskt hårdrocksband",
+          "records": []
+        },
+        {
+          "id": 3,
+          "name": "Vikingarna",
+          "description": "",
+          "records": []
         }
       ]
     },
@@ -1325,34 +1454,24 @@
               "coverImage": "/images/Kenny Rogers - There you go again.jpg",
               "year": "2000",
               "medium": "CD",
-              "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 1,
-          "name": "Dolly Parton",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Dolly Parton",
-              "title": "Jolene",
-              "description": "",
-              "coverImage": "/images/Kenny Rogers - There you go again.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "Dolly Parton",
-              "title": "9 to 5",
-              "description": "",
-              "coverImage": "/images/Deep Purple - Infinite.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": []
+              "tracks": [
+                {
+                  "id": 0,
+                  "name": "There you go again"
+                },
+                {
+                  "id": 1,
+                  "name": "He will, she knows"
+                },
+                {
+                  "id": 2,
+                  "name": "I wish I could say that"
+                },
+                {
+                  "id": 3,
+                  "name": "Homeland"
+                }
+              ]
             }
           ]
         }
