@@ -116,6 +116,7 @@ function AddRecordsPage() {
             contextValue.setCategories(categories)
             window.localStorage.setItem('recordCategories', JSON.stringify(categories));
             showMessage(messageSavedRecord)
+            resetRecordForm(event)
          }
          else {
             console.error('Något gick fel vid spara skiva')
@@ -142,8 +143,7 @@ function AddRecordsPage() {
    const showMessage = (messageBox) => {
       messageBox.current.style.display = 'inline-block'
       setTimeout(() => {
-         messageBox.current.style.display = 'none'
-         window.location.reload()
+          messageBox.current.style.display = 'none'
       }, 3000)
   }
 
@@ -169,6 +169,38 @@ function AddRecordsPage() {
       return noErrors
    }
 
+   const resetRecordForm = (event) => {
+      recordTitle.current.value = ''
+      recordDescription.current.value = ''
+      recordYear.current.value = ''
+      mediumSelector.current.selectValue = 'LP'
+      coverImageFile.current.value = ''
+
+      event.target.track1.value = "";
+      event.target.track2.value = "";
+      event.target.track3.value = "";
+      event.target.track4.value = "";
+      event.target.track5.value = "";
+      event.target.track6.value = "";
+      event.target.track7.value = "";
+      event.target.track8.value = "";
+      event.target.track9.value = "";
+      event.target.track10.value = "";
+      event.target.track11.value = "";
+      event.target.track12.value = "";
+      event.target.track13.value = "";
+      event.target.track14.value = "";
+      event.target.track15.value = "";
+      event.target.track16.value = "";
+      event.target.track17.value = "";
+      event.target.track18.value = "";
+      event.target.track19.value = "";
+      event.target.track20.value = "";
+
+      errorRecordTitle.current.style.display = 'none'
+      errorCoverImage.current.style.display = 'none'
+      errorRecord.current.style.display = 'none'
+   }
 
    return (
       <>
