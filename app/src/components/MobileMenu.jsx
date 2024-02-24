@@ -22,13 +22,13 @@ function MobileMenu() {
          <img src="/mobile-icon.webp" onClick={showMobileMenu} />
          <ul ref={ mobileMenuLinks } className="mobile-menu-links notVisible">
             <li>
-               <Link className="link" to="./" onClick={closeMobileMenu}>Start</Link>
+               <Link className="mobile-link" to="./" onClick={closeMobileMenu}>Start</Link>
             </li>
             <li>
-               <Link className="link" to="/pages/AddArtistPage" onClick={closeMobileMenu}>Lägg till artister</Link>
+               <Link className="mobile-link" to="/pages/AddArtistPage" onClick={closeMobileMenu}>Lägg till artister</Link>
             </li>
             <li>
-               <Link className="link" to="/pages/AddCategoriesPage" onClick={closeMobileMenu}>Skapa kategorier</Link>
+               <Link className="mobile-link" to="/pages/AddCategoriesPage" onClick={closeMobileMenu}>Skapa kategorier</Link>
             </li>
          </ul>
       </>

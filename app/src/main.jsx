@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
    <React.StrictMode>
       <BrowserRouter>
          <div className="header">
-            <Link className="link-logotype" to="./">
+            <Link className="logotype-link" to="./">
                <img src="/logotype.webp" className="logotype" />
             </Link>
 
