@@ -22,7 +22,10 @@ function ArtistPage() {
 
    let [artist] = categories[categoryID].artists.slice(artistID, artistID + 1)
 
+   const artistDiv = useRef(null)
+   const recordList = useRef(null)
    const addRecordsButton = useRef(null)
+   const deleteArtistButton = useRef(null)
 
    // Borde funka utan en timeout
    const changeText = () => {
@@ -33,19 +36,19 @@ function ArtistPage() {
       }, 50)
    }
 
-   const removeRecord = (record) => {
+   const deleteRecord = (record) => {
       let res = confirm(
          'Vill du verkligen ta bort ' + record.title + '. Det går inte att ångra.'
       )
 
       if (res == true) {
-         removeRecordFromJSON(record)
+         deleteRecordFromJSON(record)
       }
    }
 
-   const removeRecordFromJSON = (record) => {
+   const deleteRecordFromJSON = (record) => {
       categories[category.id].artists[artist.id].records.splice(record.id, 1)
-      resetRecordIDs(categories[category.id].artists[artist.id].records)
+      resetIDs(categories[category.id].artists[artist.id].records)
 
       const requestOptions = {
          method: 'PUT',
@@ -59,9 +62,10 @@ function ArtistPage() {
       ).then((response) => {
          if (response.ok) {
             alert('Skivan är ' + record.title +
-               ' är borttagen. Obs skivan syns fortfarande på denna sidan. Gå tillbaka till kategorisidan och välj artisten igen.'
+               ' är borttagen.'
             )
             contextValue.setCategories(categories)
+            recordList.current.children[record.id].innerHTML = "";
          }
          else {
             console.error('Något gick fel vid borttagning av skiva')
@@ -69,40 +73,89 @@ function ArtistPage() {
       })
    }
 
-   const resetRecordIDs = (records) => {
-      for (let i = 0; i < records.length; i++) {
-         records[i].id = i
+   const resetIDs = (array) => {
+      for (let i = 0; i < array.length; i++) {
+         array[i].id = i;
       }
+   }
+
+   const deleteArtist = () => {
+      let res = confirm(
+         'Vill du verkligen ta bort ' + artist.name + '. Det går inte att ångra.'
+      )
+
+      if (res == true) {
+         deleteArtistFromJSON()
+      }
+   }
+
+
+   const deleteArtistFromJSON = () => {
+      categories[category.id].artists.splice(artist.id, 1)
+      resetIDs(categories[category.id].artists)
+
+      const requestOptions = {
+         method: 'PUT',
+         headers: { 'Content-Type': 'application/json' },
+         body: JSON.stringify(categories[category.id])
+      }
+
+      fetch(
+         jsonServerUrl + '/categories/' + category.id,
+         requestOptions
+      ).then((response) => {
+         if (response.ok) {
+            alert('Artisten ' + artist.name +
+               ' är borttagen.'
+            )
+            contextValue.setCategories(categories)
+            artistDiv.current.innerHTML = "";
+
+         }
+         else {
+            console.error('Något gick fel vid borttagning av artist')
+         }
+      })
    }
 
    return (
       <>
-         <div>
             <h3>{category.name}</h3>
+            <div ref={artistDiv}>
                <h2>{artist.name}</h2>
                <p>{artist.description}</p>
-               {artist.records.map((record) => (
-                  <div key={record.id} className="records">
-                     <Link
-                        to="/pages/RecordPage"
-                        state={[record, artist, category.id]}
-                     >
-                        {record.medium + ': ' + record.title}
-                     </Link>
-                     <img
-                        src="/remove-icon.webp"
-                        className="remove-icon"
-                        onClick={() => { return removeRecord(record) }}
-                     />
-                  </div>
-               ))}
-         </div>
-         <br />
-         <Link to="/pages/AddRecordsPage" state={[artist, category.id]} onLoad={changeText()} >
-            <button ref={addRecordsButton} type="button" id="addRecordsButton">
-               Lägg till fler skivor
+               <div ref={recordList}>
+                  {artist.records.map((record) => (
+                     <div key={record.id} className="records">
+                        <Link
+                           to="/pages/RecordPage"
+                           state={[record, artist, category.id]}
+                        >
+                           {record.medium + ': ' + record.title}
+                        </Link>
+                        <img
+                           src="/delete-icon.webp"
+                           className="delete-icon"
+                           onClick={() => { return deleteRecord(record) }}
+                        />
+                     </div>
+                  ))}
+               </div>
+
+            <br />
+            <Link to="/pages/AddRecordsPage" state={[artist, category.id]} onLoad={changeText()} >
+               <button ref={addRecordsButton} type="button" id="addRecordsButton">
+                  Lägg till fler skivor
+               </button>
+            </Link>
+
+            <br />
+            <br />
+
+            <button ref={deleteArtistButton} type="button" id="deleteArtistButton" onClick={ deleteArtist}>
+               Ta bort artist
             </button>
-         </Link>
+         </div>
 
          <Link to="/pages/CategoryPage/" state={category} className="backlink">
             Tillbaka
