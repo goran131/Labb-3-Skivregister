@@ -1,9 +1,9 @@
-import { useContext, useRef } from 'react'
+import { useContext, useRef, ReactElement } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.jsx'
+import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.tsx'
 
 
-function AddArtistPage() {
+function AddArtistPage():ReactElement {
    const contextValue = useContext(CategoriesContext)
    let categories = contextValue.categories
 
@@ -13,7 +13,7 @@ function AddArtistPage() {
    const location = useLocation()
    let categoryID = location.state // Om categoryID finns i location.state så ska den kategorin vara förvald
 
-   const categorySelector = useRef(null)
+   const categorySelector = useRef<HTMLSelectElement>(null)
 
    if (categoryID != null) {
       setTimeout(() => {
@@ -21,12 +21,12 @@ function AddArtistPage() {
       }, 50)
    }
 
-   const artistName = useRef(null)
-   const artistDescription = useRef(null)
-   const saveArtistButton = useRef(null)
-   const messageSavedArtist = useRef(null)
-   const errorArtistName = useRef(null)
-   const addRecordsButton = useRef(null)
+   const artistName = useRef<HTMLInputElement>(null)
+   const artistDescription = useRef<HTMLInputElement>(null)
+   const saveArtistButton = useRef<HTMLButtonElement>(null)
+   const messageSavedArtist = useRef<HTMLDivElement>(null)
+   const errorArtistName = useRef<HTMLDivElement>(null)
+   const addRecordsButton = useRef<HTMLButtonElement>(null)
 
    const navigate = useNavigate();
 

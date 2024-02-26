@@ -1,7 +1,7 @@
-import { React, useRef } from 'react'
-import { BrowserRouter, Link } from 'react-router-dom'
+import { React, useRef, ReactElement } from 'react'
+import { Link } from 'react-router-dom'
 
-function MobileMenu() {
+function MobileMenu(): ReactElement {
    const mobileMenuLinks = useRef(null)
 
    const showMobileMenu = () => {

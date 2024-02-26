@@ -1,8 +1,8 @@
 import { useLocation, Link } from 'react-router-dom'
-import { CategoriesContext, jsonServerUrl } from '../App.jsx'
-import { useContext, useRef, useState } from 'react'
+import { CategoriesContext, jsonServerUrl } from '../App.tsx'
+import { useContext, useRef, useState, ReactElement } from 'react'
 
-function ArtistPage() {
+function ArtistPage():ReactElement {
    const location = useLocation()
    const [artistID, categoryID] = location.state
 

@@ -1,7 +1,7 @@
-import { useRef } from 'react'
+import { useRef, ReactElement } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 
-const CategoryPage = () => {
+const CategoryPage = (): ReactElement => {
     const location = useLocation()
     const category = location.state
 

@@ -9,14 +9,47 @@ import AddArtistPage from './pages/AddArtistPage'
 import AddRecordsPage from './pages/AddRecordsPage'
 import AddCategoriesPage from './pages/AddCategoriesPage'
 
-export const CategoriesContext = createContext()
+export const CategoriesContext = createContext([])
 
 export const jsonServerUrl = 'http://localhost:5030'
 export const expressServerUrl = 'http://localhost:5050/upload'
 // export const jsonServerUrl = 'https://api-json-server-xi.vercel.app'
 // export const expressServerUrl = 'https://api-express-server.vercel.app/upload'
 
+
+export type Categories = [
+   {
+      id: number,
+      name: string,
+      artists: [
+         {
+            id: number,
+            name: string,
+            description: string,
+            records: [
+               {
+                  id: number,
+                  artist: string,
+                  title: string,
+                  description: string,
+                  coverImage: string,
+                  year: number,
+                  medium: string,
+                  tracks: [
+                     {
+                        id: number,
+                        name: string
+                     }
+                  ]
+               }
+            ]
+         }
+      ]
+   }
+]
+
 function App() {
+
    const [categories, setCategories] = useState([])
 
    useEffect(() => {

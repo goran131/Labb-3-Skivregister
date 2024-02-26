@@ -1,7 +1,7 @@
-import { React } from 'react'
+import { ReactElement } from 'react'
 import { Link } from 'react-router-dom'
 
-function DesktopMenu() {
+function DesktopMenu(): ReactElement {
    return (
       <>
          <Link className="link" to="./">

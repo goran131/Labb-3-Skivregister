@@ -244,12 +244,6 @@
               "tracks": []
             }
           ]
-        },
-        {
-          "id": 2,
-          "name": "Y&T",
-          "description": "",
-          "records": []
         }
       ]
     },
@@ -1063,43 +1057,6 @@
               ]
             }
           ]
-        },
-        {
-          "id": 8,
-          "name": "Göran",
-          "description": "",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Göran",
-              "title": "Down for the count",
-              "description": "",
-              "coverImage": "/images/Rainbow - Can't happen here.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": []
-            },
-            {
-              "id": 1,
-              "artist": "Göran",
-              "title": "Holy diver",
-              "description": "",
-              "coverImage": "/images/Dio - Holy diver.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": []
-            },
-            {
-              "id": 2,
-              "artist": "Göran",
-              "title": "Down for the count",
-              "description": "",
-              "coverImage": "/images/Y&T - Down for the count.jpg",
-              "year": "",
-              "medium": "LP",
-              "tracks": []
-            }
-          ]
         }
       ]
     },
@@ -1212,124 +1169,6 @@
               "year": "2002",
               "medium": "Dubbel-CD",
               "tracks": []
-            }
-          ]
-        },
-        {
-          "id": 4,
-          "name": "Y&T",
-          "description": "Amerikanskt hårdrocksband",
-          "records": [
-            {
-              "id": 0,
-              "artist": "Y&T",
-              "title": "Down for the count",
-              "description": "",
-              "coverImage": "/images/Y&T - Down for the count.jpg",
-              "year": "1985",
-              "medium": "LP",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Summer time girls"
-                },
-                {
-                  "id": 1,
-                  "name": "All american boy"
-                },
-                {
-                  "id": 2,
-                  "name": "Don't tell me what to wear"
-                }
-              ]
-            },
-            {
-              "id": 1,
-              "artist": "Y&T",
-              "title": "Run for cover",
-              "description": "",
-              "coverImage": "/images/Meat loaf - Bad attitude.jpg",
-              "year": "1985",
-              "medium": "LP",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Run for cover"
-                },
-                {
-                  "id": 1,
-                  "name": "Empty rooms"
-                }
-              ]
-            },
-            {
-              "id": 2,
-              "artist": "Y&T",
-              "title": "In rock we trust",
-              "description": "",
-              "coverImage": "/images/Y&T - In rock we trust.jpg",
-              "year": "1984",
-              "medium": "CD",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "ffff"
-                },
-                {
-                  "id": 1,
-                  "name": "ddd"
-                },
-                {
-                  "id": 2,
-                  "name": "dddd"
-                }
-              ]
-            },
-            {
-              "id": 3,
-              "artist": "Y&T",
-              "title": "Holy diver",
-              "description": "",
-              "coverImage": "/images/Dio - Holy diver.jpg",
-              "year": "1983",
-              "medium": "CD",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "Holy diver"
-                },
-                {
-                  "id": 1,
-                  "name": "Rock 'n' roll children"
-                },
-                {
-                  "id": 2,
-                  "name": "Straight throw the heart"
-                }
-              ]
-            },
-            {
-              "id": 4,
-              "artist": "Y&T",
-              "title": "Best of Johnny Cash",
-              "description": "",
-              "coverImage": "/images/Meat Loaf - Bat out of hell II.jpg",
-              "year": "",
-              "medium": "CD",
-              "tracks": [
-                {
-                  "id": 0,
-                  "name": "dd"
-                },
-                {
-                  "id": 1,
-                  "name": "ddd"
-                },
-                {
-                  "id": 2,
-                  "name": "www"
-                }
-              ]
             }
           ]
         }
@@ -1476,6 +1315,23 @@
           ]
         }
       ]
+    },
+    {
+      "id": "6",
+      "name": "Hiphop",
+      "artists": [
+        {
+          "id": 0,
+          "name": "Eminem",
+          "description": "Ameriskansk vit rappare",
+          "records": []
+        }
+      ]
+    },
+    {
+      "id": "7",
+      "name": "Pudelrock",
+      "artists": []
     }
   ]
 }

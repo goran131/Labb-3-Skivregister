@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import { useContext, useState } from 'react'
-import { CategoriesContext } from '../App.jsx'
+import { React, useContext, useState, FC, ReactElement } from 'react'
+import { CategoriesContext } from '../App.tsx'
 
-function Home() {
+function Home(): ReactElement {
    const value = useContext(CategoriesContext)
    const categories = value.categories
 

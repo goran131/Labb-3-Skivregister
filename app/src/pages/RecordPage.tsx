@@ -1,9 +1,10 @@
+import { ReactElement } from 'react'
 import { useLocation, Link } from 'react-router-dom'
 import ImagePopup from '../components/ImagePopup'
 import 'reactjs-popup/dist/index.css'
 import css from './RecordPage.module.css'
 
-function RecordPage() {
+function RecordPage(): ReactElement {
     const location = useLocation()
     const [record, artist, categoryID] = location.state
 

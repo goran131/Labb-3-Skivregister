@@ -1,9 +1,9 @@
-import { useContext, useRef } from 'react'
-import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.jsx'
+import { useContext, useRef, ReactElement } from 'react'
+import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.tsx'
 import { useLocation, Link } from 'react-router-dom'
-import AddTracks from '../components/AddTracks.jsx'
+import AddTracks from '../components/AddTracks.tsx'
 
-function AddRecordsPage() {
+function AddRecordsPage(): ReactElement {
    const contextValue = useContext(CategoriesContext)
    let categories = contextValue.categories
 

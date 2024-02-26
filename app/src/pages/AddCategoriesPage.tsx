@@ -1,7 +1,7 @@
-import { useContext, useRef } from 'react'
-import { CategoriesContext, jsonServerUrl } from '../App.jsx'
+import { useContext, useRef, ReactElement } from 'react'
+import { CategoriesContext, jsonServerUrl } from '../App.tsx'
 
-function AddCategoriesPage() {
+function AddCategoriesPage():ReactElement {
    const contextValue = useContext(CategoriesContext)
    let categories = contextValue.categories
 
