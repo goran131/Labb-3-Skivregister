@@ -1,4 +1,4 @@
-import { useContext, useRef } from 'react'
+import { useContext, useRef, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { CategoriesContext, jsonServerUrl, expressServerUrl } from '../App.jsx'
 
@@ -15,11 +15,11 @@ function AddArtistPage() {
 
    const categorySelector = useRef(null)
 
-   if (categoryID != null) {
-      setTimeout(() => {
+   useEffect (() => {
+      if (categoryID != null) {
          categorySelector.current.selectedIndex = categoryID
-      }, 50)
-   }
+      }
+   }, []);
 
    const artistName = useRef(null)
    const artistDescription = useRef(null)
@@ -72,7 +72,6 @@ function AddArtistPage() {
                showMessage(messageSavedArtist)
                errorArtistName.current.style.display = 'none'
 
-               disableArtistForm()
                addRecordsButton.current.style.display = 'block'
             } else {
                console.error('Något gick fel vid spara artist')
@@ -86,13 +85,6 @@ function AddArtistPage() {
       setTimeout(() => {
          messageBox.current.style.display = 'none'
       }, 5000)
-   }
-
-   const disableArtistForm = () => {
-      categorySelector.current.disabled = true
-      artistName.current.disabled = true
-      artistDescription.current.disabled = true
-      saveArtistButton.current.disabled = true
    }
 
    const gotoAddRecords = () => {

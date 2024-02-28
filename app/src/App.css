@@ -143,7 +143,7 @@ a.link-color {
 }
 
 .backlink {
-   margin-top: 30px;
+   margin-top: 20px;
    clear: both;
    float: left;
    text-align: center;
@@ -177,6 +177,22 @@ a.link-color {
 .errorText {
    color: red;
    margin-bottom: 15px;
+}
+
+.buttons-div {
+   float: left;
+   width: 100%;
+   border-top: 1px solid #ccc;
+   margin-top: 30px;
+   padding: 30px 0 0;
+}
+
+.buttons-div a {
+   margin-right: 20px;
+}
+
+.buttons-div a button {
+   margin-bottom: 25px;
 }
 
 .popup-content {

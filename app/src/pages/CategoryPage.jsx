@@ -1,60 +1,94 @@
-import { useRef } from 'react'
+import { useRef, useContext, useEffect } from 'react'
+import { CategoriesContext, jsonServerUrl } from '../App.jsx'
 import { useLocation, Link } from 'react-router-dom'
 
 const CategoryPage = () => {
-    const location = useLocation()
-    const category = location.state
+   const location = useLocation()
+   const category = location.state
 
-    const noArtistsText = useRef(null)
-    const addArtistsLink = useRef(null)
+   const contextValue = useContext(CategoriesContext)
+   let categories = contextValue.categories
 
-    if (category.artists.length == 0) {
-        setTimeout(() => {
-            noArtistsText.current.style.display = 'block'
-            addArtistsLink.current.style.display = 'block'
-        }, 50)
-    }
+   const categoryDiv = useRef(null)
+   const noArtistsText = useRef(null)
+   const addArtistButton = useRef(null)
+   const deleteCategoryButton = useRef(null)
 
-    return (
-        <>
-            <div>
-                <h2>{category.name}</h2>
+   useEffect (() => {
+      if (category.artists.length == 0) {
+         noArtistsText.current.style.display = 'block'
+      }
+   }, []);
 
-                <div>
-                    <h3>Artister</h3>
+   /**
+   const deleteCategory = () => {
+      let confirmText = 'Vill du verkligen ta bort ' + category.name + '. Detta går inte att ångra.'
 
-                    {category.artists.map((artist) => (
-                        <div key={artist.id} className="artists">
-                            <Link
-                                to="/pages/ArtistPage/"
-                                state={[artist.id, category.id]}
-                            >
-                                {artist.name}
-                            </Link>
-                        </div>
-                    ))}
+      if (confirm(confirmText) == true) {
+         deleteCategoryFromJSON()
+      }
+   }
 
-                    <div ref={noArtistsText} className="notVisible">
-                        Det finns inga artister i denna kategorin
-                    </div>
+   const deleteCategoryFromJSON = () => {
+      for (let i = 0; i < categories.length; i++) {
+         if (category.id == categories[i].id) {
+            categories.splice(i, 1)
+         }
+      }
 
-                    <br />
-                    <br />
+      const deleteOptions = {method: 'DELETE'}
 
-                    <Link
-                        ref={addArtistsLink}
-                        to="/pages/AddArtistPage"
-                        state={category.id}
-                        className="notVisible"
-                    >
-                        <button type="button" id="addArtistsButton">
-                            Lägg till artister
-                        </button>
-                    </Link>
-                </div>
+      fetch(jsonServerUrl + '/categories/' + category.id, deleteOptions).then((response) => {
+         if (response.ok) {
+            contextValue.setCategories(categories)
+            categoryDiv.current.innerHTML = "";
+            addArtistButton.current.disabled = true;
+            deleteCategoryButton.current.disabled = true;
+         }
+         else {
+            console.error('Något gick fel vid borttagning av artist')
+         }
+      })
+   }
+
+   */
+
+   return (
+      <>
+         <div ref={categoryDiv}>
+            <h2>{category.name}</h2>
+
+            <h3>Artister</h3>
+
+            {category.artists.map((artist) => (
+               <div key={artist.id} className="artists">
+                  <Link
+                     to="/pages/ArtistPage/"
+                     state={[artist.id, category.id]}
+                  >
+                     {artist.name}
+                  </Link>
+               </div>
+            ))}
+
+            <div ref={noArtistsText} className="notVisible">
+               Det finns inga artister i denna kategorin
             </div>
-        </>
-    )
+         </div>
+
+         <div className="buttons-div">
+            <Link
+               to="/pages/AddArtistPage"
+               state={category.id}
+            >
+               <button ref={addArtistButton} type="button" id="addArtistButton">
+                  Lägg till artister
+               </button>
+            </Link>
+         </div>
+
+      </>
+   )
 }
 
 export default CategoryPage

@@ -1,6 +1,6 @@
 import { useLocation, Link } from 'react-router-dom'
 import { CategoriesContext, jsonServerUrl } from '../App.jsx'
-import { useContext, useRef, useState } from 'react'
+import { useContext, useRef, useEffect } from 'react'
 
 function ArtistPage() {
    const location = useLocation()
@@ -27,14 +27,11 @@ function ArtistPage() {
    const addRecordsButton = useRef(null)
    const deleteArtistButton = useRef(null)
 
-   // Borde funka utan en timeout
-   const changeText = () => {
-      setTimeout(function () {
-         if (artist.records.length == 0) {
-            addRecordsButton.current.innerText = 'Lägg till skivor'
-         }
-      }, 50)
-   }
+   useEffect (() => {
+      if (artist.records.length == 0) {
+         addRecordsButton.current.innerText = 'Lägg till skivor'
+      }
+   }, []);
 
    const deleteRecord = (record) => {
       let res = confirm(
@@ -61,9 +58,6 @@ function ArtistPage() {
          requestOptions
       ).then((response) => {
          if (response.ok) {
-            alert('Skivan är ' + record.title +
-               ' är borttagen.'
-            )
             contextValue.setCategories(categories)
             recordList.current.children[record.id].innerHTML = "";
          }
@@ -105,12 +99,8 @@ function ArtistPage() {
          requestOptions
       ).then((response) => {
          if (response.ok) {
-            alert('Artisten ' + artist.name +
-               ' är borttagen.'
-            )
             contextValue.setCategories(categories)
             artistDiv.current.innerHTML = "";
-
          }
          else {
             console.error('Något gick fel vid borttagning av artist')
@@ -120,41 +110,39 @@ function ArtistPage() {
 
    return (
       <>
-            <h3>{category.name}</h3>
-            <div ref={artistDiv}>
-               <h2>{artist.name}</h2>
-               <p>{artist.description}</p>
-               <div ref={recordList}>
-                  {artist.records.map((record) => (
-                     <div key={record.id} className="records">
-                        <Link
-                           to="/pages/RecordPage"
-                           state={[record, artist, category.id]}
-                        >
-                           {record.medium + ': ' + record.title}
-                        </Link>
-                        <img
-                           src="/delete-icon.webp"
-                           className="delete-icon"
-                           onClick={() => { return deleteRecord(record) }}
-                        />
-                     </div>
-                  ))}
-               </div>
+         <h3>{category.name}</h3>
+         <div ref={artistDiv}>
+            <h2>{artist.name}</h2>
+            <p>{artist.description}</p>
+            <div ref={recordList}>
+               {artist.records.map((record) => (
+                  <div key={record.id} className="records">
+                     <Link
+                        to="/pages/RecordPage"
+                        state={[record, artist, category.id]}
+                     >
+                        {record.medium + ': ' + record.title}
+                     </Link>
+                     <img
+                        src="/delete-icon.webp"
+                        className="delete-icon"
+                        onClick={() => { return deleteRecord(record) }}
+                     />
+                  </div>
+               ))}
+            </div>
 
-            <br />
-            <Link to="/pages/AddRecordsPage" state={[artist, category.id]} onLoad={changeText()} >
-               <button ref={addRecordsButton} type="button" id="addRecordsButton">
-                  Lägg till fler skivor
+            <div className="buttons-div">
+               <Link to="/pages/AddRecordsPage" state={[artist, category.id]} >
+                  <button ref={addRecordsButton} type="button" id="addRecordsButton">
+                     Lägg till fler skivor
+                  </button>
+               </Link>
+
+               <button ref={deleteArtistButton} type="button" id="deleteArtistButton" onClick={ deleteArtist}>
+                  Ta bort artist
                </button>
-            </Link>
-
-            <br />
-            <br />
-
-            <button ref={deleteArtistButton} type="button" id="deleteArtistButton" onClick={ deleteArtist}>
-               Ta bort artist
-            </button>
+            </div>
          </div>
 
          <Link to="/pages/CategoryPage/" state={category} className="backlink">

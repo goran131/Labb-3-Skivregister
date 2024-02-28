@@ -10,7 +10,7 @@ function RecordPage() {
     return (
         <>
             <div>
-                <h3>Artist: {artist.name}</h3>
+                <h2>{artist.name}</h2>
                 <h3>Skivtitel: {record.title}</h3>
                 <p>Utgivningsår: {record.year}</p>
 

@@ -1,13 +1,13 @@
 .left {
     float: left;
-    width: 300px;
+    width: 350px;
     margin-top: 0px;
     margin-left: -15px;
 }
 
 .leftNoTracks {
     float: left;
-    width: 340px;
+    width: 390px;
 }
 
 .right {
@@ -17,7 +17,7 @@
 }
 
 .imageBox {
-    max-width: 300px;
+    max-width: 350px;
     padding: 0px;
     display: inline-block;
 }

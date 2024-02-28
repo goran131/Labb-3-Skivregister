@@ -108,10 +108,7 @@ function AddRecordsPage() {
          body: JSON.stringify(category)
       }
 
-      fetch(
-         jsonServerUrl + '/categories/' + category.id,
-         requestOptions
-      ).then((response) => {
+      fetch(jsonServerUrl + '/categories/' + category.id, requestOptions).then((response) => {
          if (response.ok) {
             contextValue.setCategories(categories)
             window.localStorage.setItem('recordCategories', JSON.stringify(categories));
