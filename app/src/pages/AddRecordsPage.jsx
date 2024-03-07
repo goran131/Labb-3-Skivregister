@@ -241,9 +241,11 @@ function AddRecordsPage() {
                <p>Välj medium</p>
                <select name="mediumSelector" ref={mediumSelector}>
                   <option value="LP">LP</option>
-                  <option value="Dubbel-LP">Dubbel-LP</option>
+                  <option value="2-LP">2-LP</option>
                   <option value="CD">CD</option>
-                  <option value="Dubbel-CD">Dubbel-CD</option>
+                  <option value="2-CD">2-CD</option>
+                  <option value="CDR">CDR</option>
+                  <option value="2-CDR">2-CDR</option>
                   <option value="Vinylsingel">Vinylsingel</option>
                   <option value="Vinyl-maxisingel">Vinyl-maxisingel</option>
                   <option value="Cd-singel">CD-singel</option>
@@ -264,7 +266,7 @@ function AddRecordsPage() {
                </div>
             </div>
 
-            <AddTracks reference="resetTracks"/>
+            <AddTracks />
 
             <br />
             <br />

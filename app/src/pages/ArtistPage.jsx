@@ -119,7 +119,7 @@ function ArtistPage() {
                   <div key={record.id} className="records">
                      <Link
                         to="/pages/RecordPage"
-                        state={[record, artist, category.id]}
+                        state={[record, artistID, category.id]}
                      >
                         {record.medium + ': ' + record.title}
                      </Link>

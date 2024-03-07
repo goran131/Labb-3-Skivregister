@@ -20,7 +20,6 @@ const CategoryPage = () => {
       }
    }, []);
 
-   /**
    const deleteCategory = () => {
       let confirmText = 'Vill du verkligen ta bort ' + category.name + '. Detta går inte att ångra.'
 
@@ -30,16 +29,18 @@ const CategoryPage = () => {
    }
 
    const deleteCategoryFromJSON = () => {
-      for (let i = 0; i < categories.length; i++) {
-         if (category.id == categories[i].id) {
-            categories.splice(i, 1)
-         }
-      }
+
+      categories.splice(category.id, 1) // tar bort category.id
+      let oldIDs = [];
+      resetCategoryIDs(categories, oldIDs);
+
 
       const deleteOptions = {method: 'DELETE'}
 
       fetch(jsonServerUrl + '/categories/' + category.id, deleteOptions).then((response) => {
          if (response.ok) {
+            updateIDsInJSON(categories, oldIDs);
+
             contextValue.setCategories(categories)
             categoryDiv.current.innerHTML = "";
             addArtistButton.current.disabled = true;
@@ -51,7 +52,30 @@ const CategoryPage = () => {
       })
    }
 
-   */
+   const resetCategoryIDs = (categories, oldIDs) => {
+      for (let i = 0; i < categories.length; i++) {
+         oldIDs[i] = categories[i].id
+         categories[i].id = i;
+      }
+   }
+
+   const updateIDsInJSON = (categories, oldIDs) => {
+      for (let i = 0; i < categories.length; i++) {
+         const requestOptions = {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(categories[i])
+         }
+
+         fetch(jsonServerUrl + '/categories/' + oldIDs[i], requestOptions).then((response) => {
+            if (response.ok == false) {
+
+               console.error('Något gick fel vid borttagning av skiva')
+            }
+         })
+      }
+   }
+
 
    return (
       <>
@@ -85,6 +109,9 @@ const CategoryPage = () => {
                   Lägg till artister
                </button>
             </Link>
+            <button ref={deleteCategoryButton} type="button" id="deleteCategoryButton" onClick={deleteCategory}>
+               Ta bort kategori
+            </button>
          </div>
 
       </>

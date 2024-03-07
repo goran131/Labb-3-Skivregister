@@ -195,6 +195,11 @@ a.link-color {
    margin-bottom: 25px;
 }
 
+.imagefile-label {
+   float: left;
+   margin-bottom: 15px;
+}
+
 .popup-content {
    padding-bottom: 0 !important;
    max-width: 650px;

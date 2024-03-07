@@ -2,9 +2,11 @@ import { useRef } from 'react'
 
 function AddTracks() {
    const moreTracksDiv = useRef(null)
+   const addMoreTracksButton = useRef(null);
 
    const addMoreTracks = () => {
-      moreTracksDiv.current.style.display = 'block'
+      moreTracksDiv.current.style.display = 'block';
+      addMoreTracksButton.current.style.display = "none";
    }
 
    return (
@@ -57,11 +59,11 @@ function AddTracks() {
             </div>
       </div>
       <br />
-      <button type="button" onClick={addMoreTracks}>
-            Lägg till fler låtar
+      <button id="addMoreTracksButton" ref={addMoreTracksButton} type="button" onClick={addMoreTracks}>
+         Lägg till fler låtar
       </button>
-      <br />
-      <div ref={moreTracksDiv} className="notVisible">
+
+      <div id="moreTracksDiv" ref={moreTracksDiv} className="notVisible">
             <div>
                <label htmlFor="track11">11:</label>
                <input type="text" name="track11" className="textInput tracks" />

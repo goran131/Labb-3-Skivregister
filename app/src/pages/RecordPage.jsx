@@ -5,12 +5,12 @@ import css from './RecordPage.module.css'
 
 function RecordPage() {
     const location = useLocation()
-    const [record, artist, categoryID] = location.state
+    const [record, artistID, categoryID] = location.state
 
     return (
         <>
             <div>
-                <h2>{artist.name}</h2>
+                <h2>{record.artist}</h2>
                 <h3>Skivtitel: {record.title}</h3>
                 <p>Utgivningsår: {record.year}</p>
 
@@ -40,13 +40,21 @@ function RecordPage() {
                 </div>
             </div>
 
-            <Link
-                to="/pages/ArtistPage/"
-                state={[artist.id, categoryID]}
-                className="backlink"
-            >
-                Tillbaka
-            </Link>
+            <div className="buttons-div">
+               <Link to="/pages/EditRecordPage" state={[record, artistID, categoryID]} >
+                  <button type="button" id="editRecordButton">
+                     Ändra skiva
+                  </button>
+               </Link>
+
+               <Link
+                  to="/pages/ArtistPage/"
+                  state={[artistID, categoryID]}
+                  className="backlink"
+               >
+                  Tillbaka
+               </Link>
+            </div>
         </>
     )
 }
